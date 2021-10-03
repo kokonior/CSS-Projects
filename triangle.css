@@ -3,5 +3,6 @@
       height: 0;
       border-left: 50px solid transparent;
       border-right: 50px solid transparent;
+      border-top: 100px solid red;
       border-bottom: 100px solid red;
     }
