@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+nav{
+	overflow: hidden;
+  background-color: #ebf5f0;
+}
+
+nav a {
+  float: right;
+  display: block;
+  color: #747575;
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding: 14px 16px;
+  margin-right: auto;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover::after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid #747575;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px; 
+  margin-bottom: -8px;
+}
+
+
+.logo {
+  float: left;
+  font-family: 'Pattaya', sans-serif;
+  font-size: 35px;
+  color: #2f4a3d;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+nav .icon {
+  display: none;
+}
+
+main{
+  width: 100%;
+}
+
+.jumbotron {
+  height: 540px;
+  background-image: url(img/2.jpg);
+  background-size: 900px;
+  overflow: hidden;
+  text-align: center;
+  background-position: -100px;
+}
+
+.jumbotron h5{
+  margin-top: 200px;
+  margin-left: auto;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  font-size: 40px;
+  color: #D4ECDD;
+}
+
+.jumbotron p {
+  margin: auto;
+  border: solid #D4ECDD;
+  width: 200px;
+  height: 50px;
+  color: #D4ECDD;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  position: relative;
+}
+
+
+#about{
+  padding-top: 200px;
+  background-color: #ebf5f0;
+  width: 100%;
+}
+
+h6 {
+  font-size: 30px;
+  margin:auto;
+  padding-left: 30px; 
+  font-family: 'Playfair Display', serif;
+  border: solid #2f4a3d;
+  width: 160px;
+  height: 50px;
+  color: #2f4a3d;
+}
+
+#about .icon, footer .icon{
+  font-size: 45px;
+  font-family: 'Pattaya', sans-serif;
+  margin-top: 100px;
+}
+
+#about p{
+  font-size: 20px;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #2f4a3d;
+}
+
+#about img{
+  display: block;
+  margin:auto;
+  margin-top: 80px;
+  width:80%;
+  box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+  border-radius: 12px;
+}
+
+#katalog{
+  padding-top: 80px;
+  padding-bottom: 250px;
+  margin-top: 150px;
+  background-color: #ebf5f0;
+}
+
+#tanaman{
+  margin-top: 150px;
+}
+
+#tanaman1, #tanaman2, #tanaman3, #tanaman4 {
+  box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+  border-radius: 30px;
+  border: solid #747575;
+  margin: auto;
+  margin-bottom: 80px;
+  width: 80%;
+}
+
+#tanaman1 img, #tanaman2 img, #tanaman3 img, #tanaman4 img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+  height: 200px;
+}
+#tanaman1 p, #tanaman2 p, #tanaman3 p, #tanaman4 p{
+  font-family: 'Playfair Display', serif;
+  color: #2f4a3d;
+  font-size: 30px;
+  text-align: center;
+}
+
+.harga span{
+  text-decoration: line-through;
+}
+
+.harga{
+  background-color: #E9967A;
+  text-align: center;
+}
+
+#tanaman1 .harga{
+  margin-left: 50px;
+  margin-right: 60px;
+}
+
+#tanaman2 .harga{
+  margin-left: 50px;
+  margin-right: 45px;
+}
+
+
+#tanaman3 .harga{
+  margin-left: 50px;
+  margin-right: 60px;
+}
+
+#tanaman4 .harga{
+  margin-left: 70px;
+  margin-right: 60px;
+}
+
+#order{
+  background-color:white;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+
+#order form{
+  padding-top: 80px;
+}
+
+#order table {
+  font-family: 'Dosis', sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #747575;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+form input{
+  background-color: #f2f2f2;
+  font-family: 'Dosis', sans-serif;
+}
+
+#contact{
+  margin-top: 200px;
+  padding-top: 100px;
+  background-color: #ebf5f0;
+
+}
+#contact form{
+  width: 70%;
+  margin: auto;
+
+}
+
+#contact input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#contact input[type=submit] {
+  background-color: #747575;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#contact form label{
+   font-family: 'Dosis', sans-serif;
+   font-size: 20px;
+   color: #2f4a3d;
+}
+
+aside{
+  padding-top: 80px;
+  padding-bottom: 150px;
+} 
+aside img{
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  border-radius: 50%;
+  margin-top: 100px;
+  border: solid #747575;
+  box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+}
+
+aside h2{
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #2f4a3d;
+}
+
+aside p{
+  font-size: 18px;
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+footer {
+  padding:10px;
+  color: #2f4a3d;
+  background-color: #ebf5f0;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+
+}
+
+@media only screen and (min-width: 992px) {
+
+   .jumbotron{
+      background-position: 0 0px;
+   }
+
+   #about img{
+      width: 40%;
+   }
+
+   #tanaman{
+      display: flex;
+   }
+
+   #tanaman1, #tanaman2, #tanaman3, #tanaman4 {
+      flex-grow: 1;
+      margin: 10px;
+   }
+
+   aside img {
+      width: 300px;
+   }
+
+}
+
+@media screen and (max-width: 600px) {
+  nav a:not(:first-child) {display: none;}
+  nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav.responsive {position: relative;}
+  nav.responsive .icon {
+    position: absolute;
+    margin: auto;
+  }
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
