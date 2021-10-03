@@ -1,0 +1,73 @@
+body {
+	background-color: #6bdfc8;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 10px;
+	color: #125149;
+	font-size: 3.0em;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+
+button, .btn, .btn-default {
+	margin: auto;
+	display: block;
+	letter-spacing: 1px;
+}
+
+button:focus {
+	outline:0 !important;
+}
+
+p {
+	color: #125149;
+	font-weight: 700;
+	font-size: 1.5em;
+	text-align: center;
+	/*padding-right: 10px;*/
+	margin: 20px 0 0 0;
+	margin: auto;
+}
+
+span {
+	width: 30%;
+	display: inline-block;
+}
+
+.col-sm-1 {
+	width: 100px;
+	height: 100px;
+	padding-top: 10px;
+	float: left;
+}
+
+.container {
+	margin: 40px auto;
+	margin-top: 20px;
+	width: 330px;
+	/*padding-left: 40px;*/
+	font-size: 50px;
+	text-align: center;
+	color: white;
+}
+
+.vertical {
+	border-right: 5px solid #25917c;
+	border-left: 5px solid #25917c; 
+}
+
+.horizontal {
+	border-top: 5px solid #25917c;
+	border-bottom: 5px solid #25917c;
+}
+
+.won {
+	margin: 0 0 10px 0;
+}
+
+.winner {
+	margin-top: 35px;
+}
