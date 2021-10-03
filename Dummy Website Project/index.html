@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rishi's Gym</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playball&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* css reset */
+      .footer{
+        display: flex;
+        background-color: black;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        
+      }
+
+      body {
+        background: url("people-2604149_1920.jpg");
+        padding: 0px;
+        margin: 0px;
+        color: lavender;
+
+        font-family: "Playball", cursive;
+      }
+
+      .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 10px;
+        top: 7px;
+      }
+      .left img {
+        width: 55px;
+        filter: invert(100%);
+        padding: 0px 21px;
+      }
+
+      .left div {
+        text-align: center;
+        line-height: 15px;
+        font-size: 23px;
+      }
+      .mid {
+        display: block;
+        width: 57%;
+        margin: 4px auto;
+        /* border: 2px solid green; */
+      }
+      .right {
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        position: absolute;
+        right: 3px;
+        top: 20px;
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline-block;
+        font-size: 20px;
+      }
+      .navbar li a {
+        color: rgb(211, 20, 125);
+        text-decoration: none;
+        padding: 7px 29px;
+        size: 20px;
+        font-size: 24px;
+      }
+
+      .navbar li a:hover,
+      a.active {
+        text-decoration: underline;
+        color: aquamarine;
+      }
+      .btn {
+        margin: 0px 9px;
+        color: azure;
+        background-color: black;
+        padding: 4px 14px;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: "Playball", cursive;
+      }
+      .btn:hover {
+        background-color: gray;
+      }
+      .container {
+        border: 2px solid white;
+        margin: 51px 31px;
+        padding: 20px 31px;
+        width: 34%;
+        border-radius: 9px;
+      }
+      .form-group input {
+        font-size: 20px;
+        margin: 10px 12px;
+        text-align: center;
+        display: block;
+        width: 66%;
+        border: 2px solid red;
+        padding: 3px 16px;
+        border-radius: 7px;
+        font-family: "Playball", cursive;
+      }
+      .container h1 {
+        text-align: center;
+      }
+      .container button {
+        display: block;
+        width: 321px;
+        margin: 9px 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- left class for logo -->
+      <div class="left">
+        <img src="gym 2.webp" alt="" />
+        <div class="fit">Rishi Fitness</div>
+      </div>
+      <!-- mid for navigation -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href=" #" class="active"> Home </a></li>
+          <li><a href="# "> About Us </a></li>
+          <li><a href=" #"> Fitness Calculator </a></li>
+          <li><a href="# "> Contact Us </a></li>
+        </ul>
+      </div>
+      <!-- right box for buttons -->
+
+      <div class="right">
+        <button class="btn">call us</button>
+        <button class="btn">email</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join the best Gym of Bhopal now</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="enter your name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="enter your age " />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="enter your gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="enter your number" />
+        </div>
+
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+    <footer class="footer" >
+      *Rishi &copy; Gym Services* <br> *Contact for Membership* 
+      
+    </footer>
+  </body>
+</html>
