@@ -1,0 +1,234 @@
+/* css reset */
+*{
+
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variables */
+:root{
+    --navbar-height:59px
+}
+
+/* logo and image  */
+#logo{
+
+    margin: 1px 2px;
+    
+    }
+    
+    #logo img{
+        height: 65px;
+    margin: 16px 24px;
+    
+    }
+
+/* navigation  bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+    
+
+
+
+/* list styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Bangers', cursive;
+
+    
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    /* font size : 1.3rem; */
+    font-size: 24px;
+}
+
+#navbar ul li a{
+    display: block ;
+    text-decoration: none;
+    padding: 3px 20px;
+    border-radius: 8px;
+    
+    /* background-color: cadetblue; */
+
+    color: white;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: cyan;
+  
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 560px;
+
+}
+#home::before{
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background:url('../img1.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    line-height: 75px;
+    font-size: 68px;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Orelega One', cursive;
+}
+    /* services section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(224, 215, 215);
+}
+ #services .box img{
+   height: 160px;
+   display: block;
+   margin: auto;
+   
+   
+} 
+#services .box p{
+    font-family: 'Orelega One', cursive;
+}
+#services{}
+#services{}
+
+/* clients section */
+#client-section{
+height: 290px;
+position: relative;
+}
+#client-section::before{
+content: "";
+position: absolute;
+background: url('../img4.jpg');
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.7;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height:150px
+} 
+.client-item{
+    padding: 29px;
+    margin: auto 15px;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+/* contact section */
+#contact{
+    position: relative;  /*taaki utni hi jagah le jitne me uske content hai*/
+    background: url('../contact-us.jpg') no-repeat center center/cover;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('../contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content:flex-end ;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,#contact-box textarea{
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem
+}
+#contact-box form{
+    width: 40%;
+    font-family: 'Orelega One', cursive;
+
+}
+#contact-box label{
+    font-size: 1.4rem;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 2px 20px;
+
+}
+/* utility class */
+.h-primary{
+    font-size: 2.9rem;
+    padding:5px;
+    font-family: 'Bangers', cursive;;
+}
+.h-secondary{
+    font-size: 1.8 rem;
+    padding:21px;
+    font-family: 'Orelega One', cursive;
+}
+.btn{
+    padding:6px 20px ;
+    border: 2px solid white;
+    background-color: tomato;
+    color: white;
+    margin: 30px 17px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
