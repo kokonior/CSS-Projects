@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lease Calculator ZAsset Finance</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <style type="text/css">
+    	.main_section{
+    		margin:.9375rem 10%;
+    	}
+    	.sr-only {
+		    position: absolute;
+		    width: 1px;
+		    height: 1px;
+		    padding: 0;
+		    margin: -1px;
+		    overflow: hidden;
+		    clip: rect(0,0,0,0);
+		    border: 0;
+		}
+		.c-calculatorarea .c-calculate-slider .c-input label {
+		    font-weight: 600;
+		}
+		.c-calculatorarea .c-calculate-slider .e-noie {
+		    margin: 0;
+		    width: 45%;
+		    margin-top: .875rem;
+		}
+		input[type=range] {
+		    -webkit-appearance: none;
+		    margin: 10px 0;
+		    width: 100%;
+		    background: #2e50f785;
+		    border-radius:0%;
+		    height: 3px;
+		}
+		input[type=range]::-webkit-slider-thumb{
+			  -webkit-appearance: none;
+			  appearance: none;
+			  width: 25px;
+			  height: 25px;
+			  border-radius: 50%; 
+			  background: #2e50f7;
+			  cursor: pointer;
+		}
+		input[type=range]::-moz-range-thumb {
+			-webkit-appearance: none;
+			  appearance: none;	
+			  width: 25px;
+			  height: 25px;
+			  border-radius: 50%;
+			  background: #2e50f7;
+			  cursor: pointer;
+			}
+		input {
+		    line-height: normal;
+		}
+		.c-calculatorarea .c-calculate-slider .form-control {
+		    width: 45%;
+		    margin: 0 3%;
+		    height: 2.1875rem;
+		    padding-left: .625rem;
+		    float: right;
+		}
+		.c-resulttitle{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			font-size: 18px;
+			margin-top: 15px;
+
+		}
+		input[type="text"]{
+			border: none;
+			border-bottom:2px solid #2e50f7;
+			border-radius: 0;
+			margin-top: -16px !important;
+			margin-bottom: 16px !important;
+		}
+		.c-calculatorarea .c-resultbox .c-resultlabel {
+		    font-weight: 700;
+		    font-size: 1.875rem;
+		    margin-left: .625rem;
+		    text-align: center;
+		}
+		.c-btn{
+		    background-color: transparent;
+		    border-radius: 3px;
+		    border: 1px solid #2e50f7;
+		    color: #2e50f7;
+		    cursor: pointer;
+		    display: inline-block;
+		    font-family: Open Sans,sans-serif;
+		    font-size: .8125rem;
+		    font-weight: 600;
+		    line-height: 1;
+		    min-width: 8.75rem;
+		    padding: .75rem 1.125rem;
+		    position: relative;
+		    text-align: center;
+		    text-decoration: none;
+		    text-shadow: none!important;
+		    text-transform: uppercase;
+		}
+		.c-btn.active{
+			background: #2e50f7;
+			color: #fff;
+		}
+		#c-calculate-monthly {
+		  margin: 10px 0px;  
+		}
+		.c-resultbox{
+			width: 50%;
+		}
+		.c-calculate-slider{
+			width: 50%;
+		}
+		.footer__text{
+			width: 70%;
+			padding: 25px 0;
+			padding-bottom: 10px;
+			display: block;
+			margin: 0 auto;
+		}
+		.footer__text p{
+			margin:0;
+			text-align: center;
+		}
+		.main__head{
+			margin-bottom: 15px;
+
+		}
+		.main__head h1{
+			font-size: 32px;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 768px) {
+			.c-calculatorarea{
+				flex-direction: column;
+			}
+			.c-resultbox{
+			width: 100%;
+			}
+			.c-calculate-slider{
+			width: 100%;
+			}
+			.footer__text{
+				width: 100%;
+			}
+			
+		}
+		@media screen and (max-width: 500px) {
+			.c-calculatorarea .c-calculate-slider .e-noie{
+				width: 100%;
+			}
+			.main__head h1{
+				font-size: 24px;
+			}
+			.c-calculatorarea .c-calculate-slider .form-control{
+				width: 100%;
+				float: left;
+				margin: 15px 0;
+			}
+			input[type="text"]{
+				margin-top: 10px !important;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+    <section class="main_section">
+        <div class="o-grid">
+            <div class="o-content-wrap p-2">
+                <div>
+                	<div class="main__head">
+                		<h1>Calculate your Repayment</h1>
+                	</div>
+                    <div class="c-calculatorarea d-flex w-100 clearfix">
+                        <div class="c-calculate-slider">
+                            <div class="c-input clearfix">
+                                <label for="c-amount-text">Amount</label>
+                                <label for="c-amount-slider" class="sr-only">Amount Range</label>
+                                <br>
+                                <input id="c-amount-slider" class="e-noie" type="range" data-min="5000" data-max="100000" min="5000" max="100000" step="1" value="25000">
+                                <input id="c-amount-text" class="form-control" type="text"  value="25000">
+                                <span class="c-form-error amount-error" style="display: none;">
+                                    <ul class="parsley-errors-list filled">
+                                        <li class="parsley-required"> </li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <div class="c-input clearfix">
+                                <label for="c-term-text">Term (months)</label>
+                                <label for="c-term-slider" class="sr-only">Terms Range</label>
+                                <br>
+                                <input id="c-term-slider" class="e-noie" type="range" data-min="12" data-max="84" min="12" max="84" step="1" value="60">
+                                <input id="c-term-text" class="form-control" type="text" value="60">
+                                <span class="c-form-error term-error" style="display: none;">
+                                    <ul class="parsley-errors-list filled">
+                                        <li class="parsley-required"> </li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <div class="c-input clearfix">
+                                <label for="c-rate-text">Rate</label>
+                                <label for="c-rate-slider" class="sr-only">Rate Range</label>
+                                <br>
+                                <input id="c-rate-slider" class="e-noie" type="range" data-min="4" data-max="18" min="4" max="18" step="0.1" value="5.99">
+                                <input id="c-rate-text" class="form-control" type="text" value="5.99%">
+                                <span class="c-form-error rate-error" style="display: none;">
+                                    <ul class="parsley-errors-list filled">
+                                        <li class="parsley-required"> </li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="c-resultbox">
+                            <div class="u-spacing-bottom-base">
+                                <div id="c-resulttitle" class="c-resulttitle">
+                                    Your estimated&nbsp;
+                                    <span id="duration-label">monthly</span>
+                                    &nbsp;repayment
+                                </div>
+                                <div id="c-calculator-result" class="c-resultlabel">$483</div>
+                            </div>
+                            <div class="">
+                                <div class="btn-group btn-group-sm c-resulttype" style="display: flex;flex-direction: column;align-items: center;justify-content: center;" role="group">
+                                    <button id="c-calculate-monthly" type="button" data-label="monthly" class="c-btn active">Monthly</button>
+                                    <button id="c-calculate-fortnightly" type="button" data-label="fortnightly" class="c-btn ">Fortnightly</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="footer__text">
+                    	<p>* Quotes are an indication of the payment for the amount of finance specificed. The quotes are subject to commercial lending criteria with a completed credit assessment and are subject to change.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+	let amountSlider = document.getElementById("c-amount-slider");
+	let termSlider = document.getElementById("c-term-slider");
+	let rateSlider = document.getElementById("c-rate-slider");
+	let amountIn = document.getElementById("c-amount-text");
+	let termIn = document.getElementById("c-term-text");
+	let rateIn = document.getElementById("c-rate-text");
+	let monthCalc = document.getElementById("c-calculate-monthly");
+	let foreCalc = document.getElementById("c-calculate-fortnightly");
+	let changeText = document.getElementById("duration-label");
+	let result = document.getElementById("c-calculator-result");
+	
+	
+
+	
+	amountSlider.oninput = function() {
+		amountIn.value = this.value;
+	}
+	amountIn.oninput = function() {
+		amountSlider.value = this.value;
+	}
+	termSlider.oninput = function() {
+		termIn.value = this.value;
+	}
+	termIn.oninput = function() {
+		termSlider.value = this.value;
+	}
+	rateSlider.oninput = function() {
+		rateIn.value = this.value;
+	}
+	rateIn.oninput = function() {
+		rateSlider.value = this.value;
+	}
+	monthCalc.onclick = function() {
+		if (foreCalc.classList.contains("active")) {
+			foreCalc.classList.remove("active");
+		}
+		monthCalc.classList.add("active");
+		if (changeText.innerHTML === "fortnightly") {
+			changeText.innerHTML = "monthly";
+		}
+		let monInt = parseFloat(rateIn.value) / 1200;
+			let months = parseInt(termIn.value);
+			let amount = parseInt(amountIn.value);	
+			let calculation = ((monInt + (monInt / (Math.pow((1 + monInt), months) -1))) * (amount)).toFixed(2);
+
+			result.innerHTML = "$" + calculation;
+
+		
+	}
+	foreCalc.onclick = function() {
+		if (monthCalc.classList.contains("active")) {
+			monthCalc.classList.remove("active");
+		}
+		foreCalc.classList.add("active");
+		if (changeText.innerHTML === "monthly") {
+			changeText.innerHTML = "fortnightly";
+		}
+		let monInt = parseFloat(rateIn.value) / 2607;
+			let months = parseFloat(termIn.value*2.173);
+			let amount = parseInt(amountIn.value);
+			let calculation = ((monInt + (monInt / (Math.pow((1 + monInt), months) -1))) * (amount)).toFixed(2);
+			
+			result.innerHTML = "$" + calculation;
+	}
+	// amountIn.onchange = function (){
+	// 	if (monthCalc.classList.contains("active")) {
+	// 		let monInt = parseFloat(rateIn.value) / 1200;
+	// 		let months = parseInt(termIn.value);
+	// 		let amount = parseInt(amountIn.value);
+	// 		let calculation = ((monInt + (monInt / (Math.pow((1 + monInt), months) -1))) * (amount)).toFixed(2);
+	// 		console.log(calculation);
+	// 		console.log(monInt);
+	// 		console.log(months);
+	// 		console.log(amount);
+	// 	}
+	// }
+	$('.c-input input').change(function(){
+		if (monthCalc.classList.contains("active")) {
+			let monInt = parseFloat(rateIn.value) / 1200;
+			let months = parseInt(termIn.value);
+			let amount = parseInt(amountIn.value);	
+			let calculation = ((monInt + (monInt / (Math.pow((1 + monInt), months) -1))) * (amount)).toFixed(2);
+			
+			result.innerHTML = "$" + calculation;
+		}else {
+			let monInt = parseFloat(rateIn.value) / 2607;
+			let months = parseFloat(termIn.value*2.173);
+			let amount = parseInt(amountIn.value);
+			let calculation = ((monInt + (monInt / (Math.pow((1 + monInt), months) -1))) * (amount)).toFixed(2);
+			// console.log(calculation);
+			// console.log(monInt);
+			// console.log(months);
+			// console.log(amount);
+			result.innerHTML = "$" + calculation;
+		}
+	})
+
+
+
+
+
+	// calculation = ((monInt + (monInt / (Math.pow((1 + monInt), months) -1))) * (amount - (down || 0))).toFixed(2);
+ 
+</script>
+</html>
