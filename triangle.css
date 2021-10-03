@@ -1,6 +1,6 @@
 #triangle-up {
-      width: 0;
-      height: 0;
+      width: auto;
+      height: auto;
       border-left: 50px solid transparent;
       border-right: 50px solid transparent;
       border-bottom: 100px solid red;
