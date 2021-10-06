@@ -6,7 +6,9 @@ body{
 .container{
     padding-left: 4vw;
 }
-
+.post-footer-line>*:first-child{
+    margin-left: 0
+}
 .container .timeline{
     border-left: 4px solid #FF00BF;
     padding: 0.5EM 2em;
