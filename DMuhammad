@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Comic Neue';
+  margin: 0;
+  padding: 0;
+}
+h2, h3{
+  color: #004445;
+}
+header{
+  display: inline;
+}
+nav{
+  background-color: #66A5AD;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+nav li{
+  list-style-type: none;
+  display: inline;
+  margin: 1%;
+}
+nav a:hover{
+  font-weight: bolder;
+}
+main{
+  padding: 2%;
+  overflow: auto;
+  text-align: justify;
+}
+aside{
+  float: right;
+  width: 29%;
+}
+footer{
+  padding: 20px;
+  color: black;
+  background-color: #98DBC6;
+  font-weight: bold;
+  text-align: center;
+}
+article{
+  text-align: justify;
+}
+a{
+  font-size: 1.2em;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+img {
+  width: 60%;
+  border-radius: 10px;
+}
+#content{
+  float: left;
+  width: 70%;
+}
+.jumbotron{
+  font-size: 20px;
+  padding: 5%;
+  background-color: #98DBC6;
+  text-align: center;
+  color: black;
+  position: relative;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 15px;
+  background-color: white;
+}
+.profile img{
+  width: 65%;
+}
+.profile header{
+  text-align: center;
+}
+@media screen and (max-width: 920px) {
+  #content, aside{
+    width: 100%;
+    padding: 0;
+  }
+}
