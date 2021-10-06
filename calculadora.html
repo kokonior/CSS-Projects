@@ -1,0 +1,109 @@
+<html>
+   <head>
+      <title>Aula</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style type="text/css">
+      body{
+         background: gray url(Image/mosaico.jpg) repeat;
+      }
+      </style>
+      <link href="estilos.css" rel="stylesheet" type="text/css">
+      <script>
+      //alert("Ola mundo");
+      function ola(x){
+         var f=document.getElementById("frm");
+         var txt = f.txtnome;
+         txt.value = "Ola "+txt.value;
+      }
+
+      function soma() {
+         //alert("1");
+         var f=document.getElementById("frm");
+         var n1=document.getElementById("n1").value;
+         var n2=document.getElementById("n2").value;
+         var soma = n1 + n2 ;
+         alert(soma);
+      }
+
+      function subtracao() {
+         var f=document.getElementById("frm");
+         var n1=document.getElementById("n1").value;
+         var n2=document.getElementById("n2").value;
+         var soma = n1 - n2 ;
+         alert(soma);
+      } 
+
+      function multiplicacao() {
+         var f=document.getElementById("frm");
+         var n1=document.getElementById("n1").value;
+         var n2=document.getElementById("n2").value;
+         var soma = n1 * n2 ;
+         alert(soma);
+      } 
+
+      function divisao() {
+         var f=document.getElementById("frm");
+         var n1=document.getElementById("n1").value;
+         var n2=document.getElementById("n2").value;
+         var soma = n1 / n2 ;
+         alert(soma);
+      } 
+
+      function mostrarresultados() {
+
+      }
+
+      function limpar(){
+         //alert("1");
+         var f=document.getElementById("frm");
+         var n1 = f.n1;
+         var n2 = f.n2;
+
+         n1.value = "";
+         n2.value = "";
+      }
+      </script>
+
+   </head>
+   <body>
+   <form id="frm"  >
+      <div id="container">
+         <div id="topo"> 
+            <h1>Aula de Web</h1>
+         </div>
+
+         <div id="menu">
+         </div>
+
+         <div id="left">
+            <div class="bloco">
+               <span>Nome:</span>
+               <input type="text" name="txtnome" placeholder="Introduza o seu nome">
+               <input id="enviar" type="button" value="Enviar" onClick="ola('Ola')">
+            </div>
+            <div class="bloco1">
+               <span>Introduza os numeros:</span><br>
+               <input type="text" size="2" name="n1" placeholder="n1"><br>
+               <input type="text" size="2"  name="n2" placeholder="n2"><br><br>
+               <input type="button" value="+" onClick="soma()">
+               <input type="button" value="-" onClick="subtracao('')">
+               <input type="button" value="*" onClick="multiplicacao('')">
+               <input type="button" value="/" onClick="divisao('')"><br><br>
+               <input type="button" value="Limpar" onClick="limpar()"/>
+               <input type="button" value="Enviar" onClick="ola('Ola')">
+            </div>
+         </div>
+
+         <div id="right">
+            <img id="mario1" src="Image/mario1.jpg" alt=""/>
+            <img id="mario2" src="Image/mario2.jpg" alt=""/>      
+         </div>
+
+         <div id="bottom">
+
+         </div>
+      </div>
+   </form>
+   </body>
+</html>
