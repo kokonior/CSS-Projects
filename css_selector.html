@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> CSS Selector</title>
+    </head>
+    <body>
+        <style>
+            body{
+                background-color: #f1faee;
+            }
+            button{
+                font-size: 30px;
+                background-color: #a8dadc;
+            }
+            h1,h2{
+                color: #1d3557;
+            }
+            #signup{
+                background-color: #1d3557;
+                color: #f1faee;
+            }
+            span{
+                color: #457b9d;
+            }
+            .tag{
+                background-color: #e63946;
+                color: #f1faee;
+            }
+            .post a{
+                color: #457b9d;
+            }
+            footer a{
+                color: #e63946;
+            }
+            h2 + button{
+                font-size: 20px;
+            }
+            footer > a{
+                color: purple;
+            }
+            input[type="password"]{
+                color: greenyellow;
+            }
+        </style>
+        
+        <nav>
+            <label for="username">Your Name</label>
+            <input type="text" name="" id="username" placeholder="username">
+            <input type="password" name="" id="" placeholder="password">
+            <button>Log in</button>
+            <button id="signun">Sign up</button>
+        </nav>
+
+        <main>
+            <section class="post">
+                <h1>Popular Post</h1>
+                <span><p>posted by <a href="#">1First</a></p></span>
+                <h2>Lol look at this hilarious meme</h2>
+                <button>Vote</button>
+                <hr>
+            </section>
+            
+            <section class="post">
+                <h1>Popular Post</h1>
+                <span><p>posted by <a href="#">1First</a></p></span>
+                <h2>Get well soon sir</h2>
+                <button>Vote</button>
+                <hr>
+            </section>
+            
+            <section class="post">
+                <h1>Popular Post</h1>
+                <span><p>posted by <a href="#">1First</a></p></span>
+                <h2>You look beatiful today</h2>
+                <button>Vote</button>
+                <hr>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
