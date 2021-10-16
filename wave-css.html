@@ -1,0 +1,98 @@
+<style>
+.ag-format-container {
+  width: 1142px;
+  margin: 0 auto;
+}
+
+
+.ag-wave {
+  padding: 100px 0;
+  background-color: #00a2ff;
+
+  position: relative;
+}
+.ag-wave:before {
+  content: "";
+  height: 125px;
+  width: 100%;
+  background: url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/animation-wave-shadow/images/wave.svg) repeat-x scroll 0 0;
+  background-size: 1600px 198px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  -webkit-filter: drop-shadow(5px -10px 3px rgba(0, 0, 0, .2));
+  filter: drop-shadow(5px -10px 3px rgba(0, 0, 0, .2));
+
+  -webkit-animation: an-wave 20s linear infinite;
+  -moz-animation: an-wave 20s linear infinite;
+  -o-animation: an-wave 20s linear infinite;
+  animation: an-wave 20s linear infinite;
+}
+
+@-webkit-keyframes an-wave {
+  100% {
+    background-position-x: -1600px;
+  }
+}
+@-moz-keyframes an-wave {
+  100% {
+    background-position-x: -1600px;
+  }
+}
+@-o-keyframes an-wave {
+  100% {
+    background-position-x: -1600px;
+  }
+}
+@keyframes an-wave {
+  100% {
+    background-position-x: -1600px;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+
+@media only screen and (max-width: 639px) {
+
+}
+
+@media only screen and (max-width: 479px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .ag-format-container {
+    width: 750px;
+  }
+
+}
+
+@media (min-width: 980px) and (max-width: 1161px) {
+  .ag-format-container {
+    width: 960px;
+  }
+
+}
+</style>
+<div class="ag-wave">
+  <div class="ag-format-container">
+
+  </div>
+</div>
+<script>
+(function ($) {
+  $(function () {
+
+    
+
+  });
+})(jQuery);
+</script>
