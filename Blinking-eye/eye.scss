@@ -1,0 +1,100 @@
+body {
+    margin: o;
+    padding: 0;
+    background:hsl(30, 90%, 82%);
+}
+
+.eye {
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 75% 0;
+    overflow: hidden;
+    cursor: pointer;
+    
+    .shut {
+        width: 300px;
+        height: 160px;        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        z-index: 2;
+    }
+    
+    .shut span {
+        display: block;
+        width: 100%;
+        height: 20%;
+        background: hsl(30, 68%, 58%);
+        border-radius: 0 0 60% 60%;
+        transition: 0.4s all;
+    }
+
+    @mixin iris($outerColour) {
+        background: radial-gradient(ellipse at center, $outerColour 48%, #002B04 100%);
+    }
+      
+    @mixin eyeBall($eye-ball-colour) {
+        .eye-ball {
+          display: inline-block;
+          height: 150%;
+          width: 150%;
+          border-radius: 50%;
+          background: #feffff;
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          background: radial-gradient(ellipse at center, #feffff 50%,#aaa 100%);
+    }
+      
+    .iris {
+          height: 45px;
+          width: 45px;
+          border-radius: 50%;
+          padding: 20px;
+          position: absolute;
+          top: 40%;
+          left: 40%;
+          margin: -48px 0 0 -45px;
+          &.#{$eye-ball-colour} {
+            @include iris($eye-ball-colour);
+          }
+    }
+      
+    .pupil {
+          background-color: #000;
+          border-radius: 50%;
+          width: 39px;
+          height: 39px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -21px 0 0 -20px;
+    }
+      
+    .reflection {
+          position: relative;
+          height: 12px;
+          width: 12px;
+          background: #fff;
+          border-radius: 50%;
+          z-index: 1;
+          top: 60%;
+          left: 50%;
+          margin: -28px 0 0 5px;
+          opacity: .9;
+        }
+    }
+        
+    $colour:saddlebrown;
+    @include eyeBall($colour);
+}
+
+.eye:hover > .shut span {
+    height: 100%;
+}
