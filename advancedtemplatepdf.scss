@@ -1,0 +1,330 @@
+// .print__container {
+// 	// position: fixed;
+// }
+
+.home {
+	position: absolute;
+	left: -1000px;
+	top: 0;
+}
+
+.ppdf__main__container {
+	width: 100%;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f3f3f3;
+
+	.ppdf__container {
+		width: 100%;
+		// height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 16px 40px;
+
+		max-width: 21cm;
+		max-height: 29.7cm;
+		/* to centre page on screen*/
+		margin-left: auto;
+		margin-right: auto;
+		border: 2px solid $blue;
+		background-color: white;
+
+		.ppdf__container__header {
+			position: relative;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+
+			img {
+				position: absolute;
+				left: 50px;
+			}
+
+			.ppdf__header__title {
+				width: 334px;
+				text-align: center;
+
+				h1 {
+					font-family: "Poppins", sans-serif;
+					font-size: map-get($fonts-sizes, s-small-regular);
+					font-weight: 700;
+				}
+
+				p {
+					font-family: "Poppins", sans-serif;
+					font-size: 10px;
+					font-weight: 400;
+					text-align: center;
+				}
+			}
+		}
+
+		.ppdf__container__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			width: 100%;
+			margin: 28px 0 0 0;
+
+			// Biodata =================
+			.ppdf__content__biodata {
+				width: 95%;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-column-gap: 40px;
+				grid-row-gap: 8px;
+				justify-content: center;
+
+				.ppdf__biodata__item {
+					width: 100%;
+					display: flex;
+					flex-direction: row;
+					align-items: flex-start;
+
+					p {
+						font-family: "Poppins", sans-serif;
+						font-size: 10px;
+						font-weight: 400;
+						text-align: left;
+					}
+
+					.ppdf__bdt__item__title {
+						width: 65px;
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						justify-content: space-between;
+						margin-right: 12px;
+
+						p {
+							font-family: "Poppins", sans-serif;
+							font-size: 10px;
+							font-weight: 600;
+						}
+					}
+				}
+			}
+
+			// PDF Content -----------------------
+			.ppdf__content {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin: 12px 0 0 0;
+
+				.ppdf__title {
+					width: 95%;
+					background-color: #f4f4f4;
+					text-align: center;
+					padding: 9px 0;
+					margin-bottom: 16px;
+
+					h1 {
+						font-family: "Poppins", sans-serif;
+						font-size: map-get($fonts-sizes, s-extra-small);
+						font-weight: 700;
+					}
+				}
+
+				// PPDF ITEMS PER ITEM ===========
+				.__income {
+					// grid-auto-flow: column;
+					grid-template-columns: repeat(2, 0.8fr);
+					grid-template-rows: repeat(6, max-content);
+					grid-column-gap: 20px;
+				}
+				.__expense {
+					// grid-auto-flow: column;
+					grid-template-columns: repeat(2, 0.8fr);
+					grid-template-rows: repeat(4, max-content);
+					grid-column-gap: 20px;
+				}
+				.__absence {
+					grid-template-columns: repeat(2, 0.8fr);
+					grid-template-rows: repeat(4, max-content);
+					grid-column-gap: 45px;
+				}
+				.__cutting {
+					grid-template-columns: repeat(2, 0.8fr);
+					grid-template-rows: repeat(5, max-content);
+					grid-column-gap: 30px;
+				}
+				.__totalcount {
+					grid-template-columns: repeat(2, 1fr);
+					grid-template-rows: repeat(1, max-content);
+					grid-column-gap: 130px;
+				}
+
+				.ppdf__biodata__items {
+					width: 95%;
+					position: relative;
+					display: grid;
+					grid-row-gap: 8px;
+					align-items: center;
+
+					grid-auto-flow: column;
+
+					.ppdf__biodata__item {
+						width: 100%;
+						display: flex;
+						flex-direction: row;
+						align-items: flex-start;
+
+						p {
+							font-family: "Poppins", sans-serif;
+							font-size: 10px;
+							font-weight: 400;
+							text-align: left;
+						}
+
+						// PPDF ITEM TITLE PER ITEM ============
+						.__absence__item__title {
+							width: 180px;
+						}
+						.__income__item__title {
+							width: 180px;
+						}
+						.__cutting__item__title {
+							width: 130px;
+						}
+						.__totalcount__item__title {
+							width: 200px;
+						}
+						.__expense__item__title {
+							width: 180px;
+						}
+
+						.ppdf__bdt__item__title {
+							display: flex;
+							flex-direction: row;
+							align-items: flex-start;
+							justify-content: space-between;
+							margin-right: 12px;
+
+							p {
+								font-family: "Poppins", sans-serif;
+								font-size: 10px;
+								font-weight: 600;
+								margin-left: 8px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.ppdf__container__salary {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 30px;
+
+			h2 {
+				font-family: "Poppins", sans-serif;
+				font-size: map-get($fonts-sizes, s-extra-small);
+				font-weight: 700;
+			}
+			h1 {
+				font-family: "Poppins", sans-serif;
+				font-size: map-get($fonts-sizes, s-medium);
+				font-weight: 700;
+			}
+
+			.terbilang__box {
+				position: relative;
+				width: 95%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-top: 8px;
+				padding: 10px;
+				background-color: $mediumGrey;
+
+				// border: 1px solid $veryDarkGrey;
+				p {
+					width: 80%;
+					font-family: "Poppins", sans-serif;
+					font-size: map-get($fonts-sizes, s-extra-small);
+					font-weight: 400;
+					text-align: center;
+				}
+			}
+		}
+
+		.ppdf__container__footer {
+			width: 95%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			margin-top: 28px;
+
+			.ppdf__footer__left {
+				display: flex;
+				flex-direction: column;
+
+				.ppdf__footer__info:nth-child(2) {
+					margin-top: 12px;
+				}
+
+				.ppdf__footer__info {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+
+					h5 {
+						font-family: "Poppins", sans-serif;
+						font-size: 10px;
+						font-weight: 700;
+						text-align: center;
+						margin-bottom: 6px;
+					}
+
+					p {
+						font-family: "Poppins", sans-serif;
+						font-size: 12px;
+						font-weight: 400;
+						text-align: left;
+					}
+				}
+			}
+
+			.ppdf__footer__right {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				height: 90px;
+				justify-content: space-between;
+
+				p {
+					font-family: "Poppins", sans-serif;
+					font-size: 12px;
+					font-weight: 400;
+					text-align: left;
+				}
+				h6 {
+					font-family: "Poppins", sans-serif;
+					font-size: 12px;
+					font-weight: 700;
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+@media print {
+	.ppdf__main__container {
+		margin: 0;
+		box-shadow: 0;
+	}
+}
