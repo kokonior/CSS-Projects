@@ -1,0 +1,17 @@
+/* Related Post */
+.related-simplify{
+    background: #2ecc71 ;
+    color: #ecf0f1;
+    padding: 10px;
+    border: 2px dashed #27ae60;
+    border-radius: 4px;
+    font-size: 12pt;
+margin: 15px 0 15px 0;
+}
+.related-simplify a{
+    color: #ecf0f1;
+}
+related-simplify a:hover{
+color:#bdc3c7;
+text-decoration:underline;
+}
