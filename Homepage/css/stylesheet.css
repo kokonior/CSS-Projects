@@ -1,0 +1,138 @@
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  body, html {
+    background-color: #F6F4EF;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  } 
+
+  #wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav_bar {
+    width: 100%;
+    text-align: center;
+    background-color: floralwhite;
+    padding-bottom: 3%;
+  }
+
+  .main_header {
+    text-align: center;
+    background-color: floralwhite;
+    padding: 2%;
+    font-family: 'Old Standard TT', serif;
+    color: #51442A;
+    width: 100%;
+  }
+
+  a:link {
+    color: #F1DFBD;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #F1DFBD;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #614715;
+    text-decoration: overline;
+  }
+  a:active {
+    color: #614715;
+    text-decoration: none;
+  }
+
+  .section_1 {
+    background-color: floralwhite;
+    width: 45%;
+    float: left;
+    text-align: left;
+    margin: 1%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #51442A;
+    padding: 1%;
+  }
+
+  .second_header {
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+    color: #51442A;
+  }
+
+  .section_2 {
+    background-color: floralwhite;
+    width: 45%;
+    float: right;
+    text-align: left;
+    margin: 1%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #51442A;
+    padding: 1%;
+  }
+
+  .third_header {
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+    color: #51442A;
+  }
+
+  .section_3 {
+    text-align: center;
+    padding: 2%;
+    font-family: 'Old Standard TT', serif;
+    color: #51442A;
+    width: 100%;
+    text-decoration: underline;
+  }
+
+  .star_wars {
+    text-align: center;
+    margin: 3%;
+    font-size: 24px;
+    color: #51442A;
+  }
+
+  .footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: floralwhite;
+    text-align: center;
+    clear: both;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /*.social_icons {
+    float: right;
+  }
+
+  .photo_gallery {
+    
+  }
+
+  .photo_gallery:hover {
+
+  } /*
