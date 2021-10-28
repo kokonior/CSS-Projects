@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    text-decoration: none;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(262deg, white, #dbe9ff);
+}
+
+.bg {
+    background: url(https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704__340.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+}
+
+
+
+.menudiv {
+    overflow: hidden;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 300px;
+    margin-top: 50;
+    background: rgba(0, 0, 0, 0.678);
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+
+}
+
+.menu h1 {
+    display: inline;
+    padding: 15px 0 30px 10px;
+    margin: 0 0 0 100px;
+    float: left;
+    color: white;
+    font-size: 2.5em;
+}
+
+.menu ul {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 10px 30px 10px 60px;
+}
+
+.menu ul li a {
+    list-style: none;
+    color: #ffffff;
+    transition: all .4s ease-in-out;
+    padding: 0 5px;
+    padding-bottom: 20px;
+}
+
+.menu ul li a:focus {
+    border-bottom: 2px solid white;
+    color: aqua;
+    padding-bottom: 38px;
+}
+
+
+.contact-button-top {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+
+}
+
+.contact-button-top a h1 {
+    color: #ffffff;
+    padding: 10px 15px;
+    background: rgba(26, 24, 24, 0.945);
+    transition: all .2s ease-in-out;
+    font-weight: normal;
+    font-size: 1.5em;
+    border-radius: 8px;
+}
+
+.contact-button-top a h1:hover {
+    box-shadow: 0 0 10px lightskyblue, 0 0 15px white, 0 0 25px lightskyblue;
+}
+
+.contact-button-top a h1:active {
+    box-shadow: none;
+    background-color: rgb(76, 136, 173);
+    color: rgb(3, 3, 3);
+    font-weight: bold;
+}
+
+.scrool p {
+    background: rgba(0, 0, 0, 0.644);
+    color: #ffffff;
+    width: fit-content;
+    position: sticky;
+    top: 50%;
+    align-items: center;
+    width: auto;
+    font-size: .88em;
+}
+
+.info {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 15px white, 0 0 25px skyblue, 0 0 35px rgb(246, 247, 248);
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 10%;
+    height: 800px;
+    word-wrap: break-word;
+}
+
+.info h2 {
+    margin-top: 50px;
+}
+
+.pulau {
+    float: left;
+    width: 50%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 35px;
+    font-size: .9em;
+}
+
+.pulaunaya,
+.pulausombu,
+.pulauwangi,
+.pulaukapota {
+    padding: 30px 40px 40px;
+    height: 180px;
+}
+
+.infopulau {
+    margin-left: -300px;
+    margin-top: 20px;
+    font-size: .8em;
+}
+
+.infopulau a {
+    color: rgb(255, 255, 255);
+
+}
+
+.infopulau a p em {
+    background: rgb(30,
+            192,
+            30);
+    padding: 7px;
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+}
+
+.infopulau a p em:hover {
+    box-shadow: inset 0 0 3px rgb(21, 99, 21), 0 0 5px rgb(21, 99, 21), 0 0 10px rgb(21, 99, 21);
+}
+
+.infopulau a p em:active {
+    background: rgb(21, 99, 21);
+    box-shadow: none;
+}
+
+.contact-button {
+    text-align: justify;
+
+}
+
+.icon {
+    position: absolute;
+    top: 1750px;
+    right: 300px;
+}
+
+.contact-button a {
+    color: aliceblue;
+    padding: 8px;
+}
+
+.contact-button li {
+    padding: 5px;
+    list-style-type: none;
+    transition: all .5s ease-in-out;
+    border-radius: 8px;
+
+}
+
+.contact-button li:hover {
+    box-shadow: 0 0 3px white,
+        0 0 5px white,
+        0 0 8px white;
+}
+
+.footer {
+    height: 160px;
+    background: rgb(15, 14, 14);
+}
+
+.footer h1,
+.footer ul a {
+    color: rgb(212, 54, 6);
+
+
+}
+
+.footer header h1 {
+    position: absolute;
+    top: 1800px;
+    left: 300px;
+}
+
+.footer ul {
+    position: absolute;
+    top: 1810px;
+    left: 450px;
+    font-size: 1.2em;
+    font-style: normal;
+}
+
+.footer ul li {
+    display: inline;
+    padding: 8px;
+}
