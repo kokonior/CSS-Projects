@@ -1,0 +1,69 @@
+/*install fonts*/
+@font-face {
+	font-family: abrilFat;
+	src: url('./font/AbrilFatface-Regular.ttf');
+}
+
+body {
+	margin: 0;
+}
+
+.container {
+	width: 70%;
+	overflow: hidden;
+	margin: auto;
+}
+
+.header {
+	width: 100%;
+	overflow: hidden;
+	/*background: linear-gradient(red, blue);*/
+	/*background: linear-gradient(to left, red, blue);*/
+	/*background: linear-gradient(to right, red, blue);*/
+	background: linear-gradient(to bottom, rgb(32, 9, 88), rgb(8, 59, 84));
+	/*background: radial-gradient(red, blue);*/
+	height: 550px;
+}
+
+.header .logo {
+	font-size: 32px;
+	float: left;
+	font-family: 'Lobster';
+	color: #fff;
+}
+
+.header .navigation {
+	float: right;
+	margin-top: 40px;
+}
+
+.header .navigation li {
+	float: right;
+	margin-left: 20px;
+	font-size: 18px;
+	display: block;	
+}
+
+.header .navigation li a {
+	color: #fff;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.header .navigation li a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+
+.icon-kelas {
+	width: 300px;
+	height: 300px;
+	background-image: url('img/img1.jpg');
+	background-size: cover;
+	border-radius: 50%;
+}
+
+.parent {
+	margin-top: 100px;
+}
