@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+int n,i,j,k,l;
+cout<<“Masukkan “;
+cin>>n;
+for (i=1; i<=n; i++) {
+for (j=i; j<=n-1; j++)
+cout<<“_ “;
+for (k=1; k<=i; k++)
+cout<<“* “;
+for (l=2; l<=i; l++)
+//for (l=1; l<=i-1; l++)
+cout<<“* “;
+cout<<endl;}
+return 0;
+}
