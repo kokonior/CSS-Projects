@@ -1,0 +1,289 @@
+.loader {
+  position: relative;
+  width: 400px;
+  margin: 100px auto;
+}
+
+.duo {
+  height: 30px;
+  width: 90px;
+  background: hsla(0, 0%, 0%, 0) !important;
+  position: absolute;
+}
+
+/* .duo,
+.dot {
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+} */
+
+.duo1 {
+  left: 0;
+}
+
+.duo2 {
+  left: 60px;
+}
+.duo3 {
+  left: 120px;
+}
+.duo4 {
+  left: 180px;
+}
+.duo5 {
+  left: 240px;
+}
+.dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.dot-a {
+  left: 0px;
+}
+
+.dot-b {
+  right: 0px;
+}
+
+.duo2 {
+  animation: cubic-bezier(0.63, -0.35, 0.84, 0.38) infinite;
+  animation-name: bounce2;
+  animation-duration: 5s;
+  animation-delay: 0.25s;
+}
+.duo3 {
+  animation: cubic-bezier(0.63, -0.35, 0.84, 0.38) infinite;
+  animation-name: bounce3;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+}
+.duo4 {
+  animation: cubic-bezier(0.63, -0.35, 0.84, 0.38) infinite;
+  animation-name: bounce4;
+  animation-duration: 5s;
+  animation-delay: 0.75s;
+}
+.duo5 {
+  animation: cubic-bezier(0.63, -0.35, 0.84, 0.38) infinite;
+  animation-name: bounce5;
+  animation-duration: 5s;
+  animation-delay: 1.25s;
+}
+
+.duo1 .dot-a {
+  opacity: 0;
+}
+.duo2 .dot-a {
+  opacity: 0;
+}
+
+.duo3 .dot-a {
+  opacity: 0;
+}
+
+.duo4 .dot-a {
+  opacity: 0;
+}
+
+.duo5 .dot-a {
+  opacity: 0;
+}
+
+.dot1 {
+  /* transform: translateX(100%); */
+  background-color: #ee9134;
+
+  position: absolute;
+  animation: ease-in-out infinite;
+  animation-name: run;
+  animation-duration: 5s;
+}
+
+.dot2 {
+  background-color: #ea6f35;
+  animation: cubic-bezier(0.63, -0.35, 0.84, 0.38) infinite;
+  animation-name: bounce2;
+  animation-duration: 5s;
+  animation-delay: 0.25s;
+}
+
+.dot3 {
+  /* transform: translateX(-100%); */
+  background-color: #e64143;
+  animation: cubic-bezier(0.63, -0.35, 0.84, 0.38) infinite;
+  animation-name: bounce3;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+}
+.dot4 {
+  /* transform: translateX(-100%); */
+  background-color: #e54660;
+  animation: cubic-bezier(0.63, -0.35, 0.84, 0.38) infinite;
+  animation-name: bounce4;
+  animation-duration: 5s;
+  animation-delay: 0.75s;
+}
+.dot5 {
+  /* transform: translateX(-100%); */
+  top: 0;
+  background-color: #e54d7b;
+  animation: cubic-bezier(0.63, -0.35, 0.84, 0.38) infinite;
+  animation-name: bounce5;
+  animation-duration: 5s;
+  animation-delay: 1.25s;
+}
+
+@keyframes run {
+  0% {
+    left: 75%;
+    background-color: #ee9134;
+  }
+  12.5% {
+    background-color: #ea6f35;
+  }
+  25% {
+    background-color: #e64143;
+  }
+  37.5% {
+    background-color: #e54660;
+  }
+  50% {
+    left: 350%;
+    background-color: #e54d7b;
+  }
+  62.5% {
+    background-color: #e54660;
+  }
+  75% {
+    background-color: #e64143;
+  }
+  87.5% {
+    background-color: #ea6f35;
+  }
+  100% {
+    left: 75%;
+    background-color: #ee9134;
+  }
+}
+
+@keyframes bounce2 {
+  0% {
+    transform: rotate(355deg);
+  }
+  12.5% {
+    transform: rotate(185deg);
+  }
+  25% {
+    transform: rotate(180deg);
+    background-color: #ee9134;
+  }
+  37.5% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  62.5% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(180deg);
+  }
+  87.5% {
+    transform: rotate(0deg);
+  }
+  100% {
+  }
+}
+@keyframes bounce3 {
+  0% {
+    transform: rotate(360deg);
+  }
+  12.5% {
+    transform: rotate(180deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  37.5% {
+    transform: rotate(180deg);
+    background-color: #ea6f35;
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  62.5% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+  87.5% {
+    transform: rotate(0deg);
+  }
+  100% {
+  }
+}
+@keyframes bounce4 {
+  0% {
+    transform: rotate(360deg);
+  }
+  12.5% {
+    transform: rotate(180deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  37.5% {
+    transform: rotate(180deg);
+    background-color: #e64143;
+  }
+  50% {
+    transform: rotate(173deg);
+  }
+  62.5% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+  87.5% {
+    transform: rotate(0deg);
+  }
+  100% {
+  }
+}
+@keyframes bounce5 {
+  0% {
+    transform: rotate(360deg);
+  }
+  12.5% {
+    transform: rotate(185deg);
+  }
+  25% {
+    transform: rotate(181deg);
+  }
+  37.5% {
+    transform: rotate(180deg);
+    transform: rotate(2deg);
+    background-color: #e54660;
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  62.5% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  87.5% {
+    transform: rotate(0deg);
+  }
+  100% {
+  }
+}
