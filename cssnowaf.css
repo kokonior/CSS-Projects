@@ -1,0 +1,70 @@
+body {
+	padding: 2px 180px;
+}
+
+/* Bagian HEADER*/
+.header {
+	background-color: green;
+	padding: 5px 10px;
+	text-align: left;
+}
+
+/* Bagian NAVIGASI MENU*/
+.navmenu {
+	background-color: yellow;
+	padding: 15px 15px; 
+	text-align: left;
+}
+
+.navmenu a {
+	color: red;
+	padding: 10px 10px;
+}
+
+/* ketika mmouse cursor di atas tulisan menu, maka akan merubah background, size, dan warna font */
+.navmenu a:hover{
+	background-color: #CECE0A;
+	font-size: 110%;
+	color: black;
+}
+
+/*Bagian Content dan Side Bar*/
+.kolom {
+	float: left;
+}
+
+.kolom.kiri a:hover{ /*ketika kursor di atas tulisan link, maka ada shadow pada text*/
+	text-shadow: 5px 5px 3px blue;
+}
+
+.kolom.kiri {
+	width: 25%;
+	height: 500px;
+	background-color: orange;
+}
+
+.kolom.kanan {
+	width: 75%;
+	height: 500px;
+	background-color: red;
+}
+
+.baris:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.footer{
+	padding: 15px;
+	text-align: left;
+	background-color: blue;
+
+}
+
+/* untuk mode mobile */
+@media screen and (max-width: 600px) {
+	.kolom.kiri, .kolom.kanan {
+		width: 100%;
+	}
+}
