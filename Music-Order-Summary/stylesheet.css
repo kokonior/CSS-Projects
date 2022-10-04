@@ -1,0 +1,141 @@
+html,body
+{
+    background-color: hsl(225, 100%, 94%);
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 14px;
+}
+
+#img
+{
+    /* margin: 0px;
+    padding: 0px; */
+    width: 100%;
+    /* display: none; */
+}
+
+#main
+{
+    background-color: #ffffff;
+    width: 27%;
+    height: 50%;
+    text-align: center;
+    border-radius: 10px;    
+    margin: 0px 0px 0px 35%;
+    padding: 0% 0px 0px 0px;
+    transform: translate(0,-65%);
+    /* display: none; */
+    
+}
+
+#hero
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#planbox
+{
+    background-color:hsl(225, 100%, 98%);
+    margin: 5px 0px 0px 5%;
+    width: 90%;
+    border-radius: 10px;
+    
+}
+
+#plan
+{
+    margin: 0px 0px 0px 0px;
+    padding: 10px 110px 0px 0px;
+    font-weight: 900;
+}
+
+#price
+{
+    margin: 0px 0px 0px 0px;
+    padding: 5px 120px 0px 0px;
+    color: hsl(224, 23%, 55%);
+    font-size: 0.9em;
+}
+
+#music
+{
+    float: left;
+    margin: 0px;
+    padding: 3% 0px 0px 5%; /*top right bottom left*/
+}
+
+#change
+{
+    float: right;
+    /* transform:translate(-50%,-150%); */
+    /* display: inline; */
+    margin: -14.5% 8% 0px 0px;
+    padding: 0px;
+}
+
+#change a, a:visited
+{
+    color: hsl(245, 75%, 52%);
+}
+
+#change a:hover
+{
+    text-decoration: none;
+    color:#6255e7;;
+}
+
+.songs
+{
+    color: hsl(224, 23%, 55%);
+    margin: 0px;
+}
+
+#pay
+{
+    background-color: hsl(245, 75%, 52%);
+    color: #ffffff;
+    height: 10%;
+    width: 90%;
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    border: none;
+    margin: 10px;
+    padding: 15px;
+    font-weight: 700;
+    box-shadow: 0px 10px 15px #6155e754;
+}
+
+#pay:hover
+{
+    background-color:#6255e7;
+    cursor:pointer;
+}
+
+#cancel
+{
+    color:hsl(224, 23%, 55%);
+    margin: 0px 0px 0px 0px;
+    padding: 5% 5% 10% 5%;
+    font-weight: 700;
+}
+
+#cancel:hover
+{
+    color: #000000;
+    cursor: pointer;
+}
+
+.attribution
+{
+    margin: -25% 0px 0px 36.5%;
+    padding: 0px 0px 0px 0px;
+}
+
+h1
+{
+    font-size: 1.5em ;
+    font-weight: 900;
+}
