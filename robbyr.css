@@ -1,34 +1,40 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-div.background {
-  background: url(https://images6.alphacoders.com/644/thumb-1920-644887.png) repeat;
-  border: 2px solid black;
+body {
+    font-family: serif;
+
 }
 
-div.transbox {
-  margin: 30px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
+li {
+    list-style: none;
+    float: left;
+    padding: 33px 20px;
 }
 
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
+.header{
+    background-color: rgb(10, 25, 58);
+    height: 90px;
+    color: #fff;
+
 }
-</style>
-</head>
-<body>
 
-<div class="background">
-  <div class="transbox">
-    <p>HALO HALO HALO HALO YAHALO.</p>
-  </div>
-</div>
+.header-logo {
+    font-size: 36px;
+    float: left;
+    padding: 20px 40px;
+}
 
-</body>
-</html>
+main{
+    padding: 100px 80px;
+
+}
+
+.copy-container h1 {
+    font-size: 140px;
+}
+
+.copy-container h2 {
+    font-size: 60px;
+}
+
+.copy-container span {
+    color: red;
+}
