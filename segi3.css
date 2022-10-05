@@ -1,0 +1,8 @@
+#triangle-up {
+      width: auto;
+      height: auto;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 100px solid red;
+      border-bottom: 100px solid red;
+    }

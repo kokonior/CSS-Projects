@@ -1,0 +1,27 @@
+body{
+    background-color: #010413;
+}
+
+.box {
+    display: flex;
+    width: 400px;
+    --angle: 0deg;
+    background-color: black;
+    height: 400px;
+    border: 7px solid;
+    border-image:linear-gradient(var(--angle) , #ffd800, #ff5520, #750cf2, #0cbcf2)  1;
+
+    animation: 2s rotate linear infinite;
+}
+
+@property --angle {
+    syntax : '<angle>';
+    initial-value:0deg;
+    inherits: false;
+}
+
+@keyframes rotate{
+    to{
+        --angle:360deg
+    }
+}

@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh
+}
+
+
+/* profile */
+
+#profile {
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    background-color: #18cbfc;
+    color: #f6f6f6;
+}
+
+.image {
+    padding-top: 20px;
+    border-radius: 50%;
+    width: 200px;
+    height: 250px;
+}
+
+
+/* summary */
+
+#summary {
+    margin: 20px auto;
+    height: 250px;
+    max-width: 700px;
+}
+
+#summary>h1 {
+    text-align: center;
+}
+
+.nama {
+    text-align: center;
+}
+
+.nama {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+#summary>p {
+    font-size: large;
+}
+
+
+/* experience */
+
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 80px 200px;
+    gap: 60px;
+    margin: 20px auto;
+    height: 400px;
+    max-height: auto;
+    max-width: 800px;
+}
+
+.grid-item {
+    margin-left: 30px;
+}
+
+.grid-item>ul>li {
+    padding: 5px;
+}
+
+.grid-item>p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* aboutme */
+
+#flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 500px;
+    max-width: 800px;
+}
+
+#flex-container>div {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.content {
+    flex-basis: 0;
+    flex-grow: 2;
+}
+
+.content>img {
+    max-height: 360px;
+}
+
+.sidebar {
+    flex-grow: 1;
+}
+
+.imageApi>a>img {
+    width: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* skills */
+
+
+/* ini nanti makek flex aja  */
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    width: 800px;
+    Justify-content: center;
+}
+
+#skills>h1 {
+    padding-top: 20px;
+}
+
+.imgSkills {
+    width: 300px;
+    height: 200px;
+}
+
+footer {
+    background-color: #18cbfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer>form {
+    padding-top: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1080px) {
+    /* aboutme */
+    .imageApi>a>img {
+        width: 80px;
+        height: 80px;
+    }
+    .noted {
+        padding-left: 50px;
+    }
+    .image>a {
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (orientation: portrait) {
+    /* profile */
+    #profile {
+        text-align: center;
+        font-size: 3vw;
+        height: auto;
+        width: 100%;
+        background-color: #18cbfc;
+        color: #f6f6f6;
+    }
+    .image {
+        padding-top: 20px;
+        border-radius: 50%;
+        width: 50%;
+        height: 40%;
+        padding-bottom: 20px;
+    }
+    /* summary */
+    #summary {
+        margin: 20px 20px auto 20px;
+        height: 200px;
+        max-width: auto;
+        font-size: 3vw;
+    }
+    #summary>h1 {
+        text-align: center;
+    }
+    .nama {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
+    #summary>p {
+        font-size: 3.2vw;
+    }
+    /* experience */
+    #grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 80px 200px;
+        gap: 60px;
+        margin-bottom: 200px;
+        height: 400px;
+        max-height: auto;
+        max-width: 800px;
+    }
+    .grid-item {
+        margin-left: 30px;
+    }
+    .grid-item>ul>li {
+        padding: 5px;
+        font-size: 3vw;
+    }
+    .grid-item>p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 3.2vw;
+    }
+    .grid-item>h1 {
+        font-size: 4vw;
+    }
+    /* aboutme */
+    #flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        height: auto;
+        max-width: 800px;
+    }
+    #flex-container>div {
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+    }
+    .content {
+        flex-basis: 0;
+        flex-grow: 2;
+    }
+    .content>img {
+        max-height: 360px;
+        height: 30vh;
+    }
+    .sidebar {
+        flex-grow: 1;
+    }
+    .imageApi>a>img {
+        display: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    /* skills */
+    /* ini nanti makek flex aja  */
+    #skills {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px auto;
+        width: auto;
+        Justify-content: center;
+    }
+    #skills>h1 {
+        padding-top: 20px;
+    }
+    .imgSkills {
+        width: 30vw;
+        height: 30vh;
+    }
+    footer {
+        background-color: #18cbfc;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer>form {
+        padding-top: 20px;
+        text-align: center;
+    }
+    footer>p {
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+}
