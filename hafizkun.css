@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.background {
+  background: url(https://images6.alphacoders.com/644/thumb-1920-644887.png) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+</head>
+<body>
+
+<div class="background">
+  <div class="transbox">
+    <p>HALO HALO HALO HALO YAHALO.</p>
+  </div>
+</div>
+
+</body>
+</html>
