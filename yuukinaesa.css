@@ -1,34 +1,31 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-div.background {
-  background: url(https://images6.alphacoders.com/644/thumb-1920-644887.png) repeat;
-  border: 2px solid black;
+.display-flex{
+  display: flex;
 }
 
-div.transbox {
-  margin: 30px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
+.flexDirection-column{
+  flex-direction: column;
 }
 
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
+.flexDirection-row{
+  flex-direction: row;
 }
-</style>
-</head>
-<body>
 
-<div class="background">
-  <div class="transbox">
-    <p>HALO HALO HALO HALO YAHALO.</p>
-  </div>
-</div>
+.justifyContent-center{
+  justify-content: center;
+}
 
-</body>
-</html>
+.justifyContent-flexStart{
+  justify-content: flex-start;
+}
+
+.alignItems-flexStart{
+  align-items: flex-start;
+}
+
+.alignItems-center{
+  align-items: center;
+}
+
+.flexShrink-0{
+  flex-shrink: 0;
+}
