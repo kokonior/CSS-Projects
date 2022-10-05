@@ -1,40 +1,42 @@
-body {
-    font-family: serif;
+<html>
+  <head>
+    <title> Membuat Login </title>
+    <meta charset="UTF-8">
+    <style>
+      body{
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="shortcut icon" href="gambar/seputar pemograman.jpg">
+      <p><marquee scrollamount="20" behavior="alternate"><pre> &#174;Sela&#771;ma&#771;t Da&#771;ta&#771;ng di Seputar Pemogra&#771;ma&#771;n&#174; <hr color="blue"></pre></marquee></p><hr color="red" size="10">
 
-}
+      <div class="header">
 
-li {
-    list-style: none;
-    float: left;
-    padding: 33px 20px;
-}
+        <div class="header_isi">
 
-.header{
-    background-color: rgb(10, 25, 58);
-    height: 90px;
-    color: #fff;
+          <div class="gambar">
 
-}
+            <form action="login.php" method="POST">
 
-.header-logo {
-    font-size: 36px;
-    float: left;
-    padding: 20px 40px;
-}
+              <input type="text" name="username" placeholder="Username" class="login_regis">     <br />
+              <input type="password" name="password" placeholder="Password" class="login_regis"> <br />
 
-main{
-    padding: 100px 80px;
+            <div class="chexbox">
+              <input type="checkbox" name="chek" > Remember me <br />
+            </div>
 
-}
+              <input type="Submit" name="login" value="LOGIN" class="tombol_login">
+            </form>
 
-.copy-container h1 {
-    font-size: 140px;
-}
+        </div>
 
-.copy-container h2 {
-    font-size: 60px;
-}
+      </div>
 
-.copy-container span {
-    color: red;
-}
+      <div class="copyright">
+        CopyRight&copy 2016 | Design By: FatikZ
+      </div>
+    </div>
+  </body>
+</html>
