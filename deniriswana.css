@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title> Membuat Login </title>
+    <meta charset="UTF-8">
+    <style>
+      body{
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="shortcut icon" href="gambar/seputar pemograman.jpg">
+      <p><marquee scrollamount="20" behavior="alternate"><pre> &#174;Sela&#771;ma&#771;t Da&#771;ta&#771;ng di Seputar Pemogra&#771;ma&#771;n&#174; <hr color="blue"></pre></marquee></p><hr color="red" size="10">
+
+      <div class="header">
+
+        <div class="header_isi">
+
+          <div class="gambar">
+
+            <form action="login.php" method="POST">
+
+              <input type="text" name="username" placeholder="Username" class="login_regis">     <br />
+              <input type="password" name="password" placeholder="Password" class="login_regis"> <br />
+
+            <div class="chexbox">
+              <input type="checkbox" name="chek" > Remember me <br />
+            </div>
+
+              <input type="Submit" name="login" value="LOGIN" class="tombol_login">
+            </form>
+
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        CopyRight&copy 2016 | Design By: FatikZ
+      </div>
+    </div>
+  </body>
+</html>
