@@ -1,40 +1,31 @@
-body {
-    font-family: serif;
-
+.display-flex{
+  display: flex;
 }
 
-li {
-    list-style: none;
-    float: left;
-    padding: 33px 20px;
+.flexDirection-column{
+  flex-direction: column;
 }
 
-.header{
-    background-color: rgb(10, 25, 58);
-    height: 90px;
-    color: #fff;
-
+.flexDirection-row{
+  flex-direction: row;
 }
 
-.header-logo {
-    font-size: 36px;
-    float: left;
-    padding: 20px 40px;
+.justifyContent-center{
+  justify-content: center;
 }
 
-main{
-    padding: 100px 80px;
-
+.justifyContent-flexStart{
+  justify-content: flex-start;
 }
 
-.copy-container h1 {
-    font-size: 140px;
+.alignItems-flexStart{
+  align-items: flex-start;
 }
 
-.copy-container h2 {
-    font-size: 60px;
+.alignItems-center{
+  align-items: center;
 }
 
-.copy-container span {
-    color: red;
+.flexShrink-0{
+  flex-shrink: 0;
 }
