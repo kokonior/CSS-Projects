@@ -1,65 +1,155 @@
-<style>
-* {
-  box-sizing: border-box;
+*{
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
 }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+.hero{
     width: 100%;
-    margin-top: 0;
-  }
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
 }
-</style>
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+button{
+    color: #fbfcfb;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+} 
+.content{
+    color: #fbfcfb;
+    position: absolute;
+    top: 35%;
+    left: 27%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+/* small{
+    font-size: 20px;
+} */
+h1{
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+.sidebar{
+    width: 50px;
+    height: 100vh;
+    background:linear-gradient(#00545d, #000729) ;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.menu{
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+.social-links img , .useful-links img{
+    width: 25px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+.social-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.useful-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 1;
+    }
+    
+    70%{
+        opacity: 1;
+    }
+    
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+    
+    
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+}
+
+.bubbles img:nth-child(3){
+    animation-delay: 2s;
+}
+
+.bubbles img:nth-child(4){
+    animation-delay: 3s;
+    width: 20px;
+}
+
+.bubbles img:nth-child(5){
+    animation-delay: 4.5s;
+}
+
+.bubbles img:nth-child(5){
+    animation-delay: 3s;
+    width: 45px;
+}
+
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+    width: 35px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+}
