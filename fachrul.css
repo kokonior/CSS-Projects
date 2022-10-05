@@ -1,31 +1,42 @@
-.display-flex{
-  display: flex;
-}
+<html>
+  <head>
+    <title> Membuat Login </title>
+    <meta charset="UTF-8">
+    <style>
+      body{
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="shortcut icon" href="gambar/seputar pemograman.jpg">
+      <p><marquee scrollamount="20" behavior="alternate"><pre> &#174;Sela&#771;ma&#771;t Da&#771;ta&#771;ng di Seputar Pemogra&#771;ma&#771;n&#174; <hr color="blue"></pre></marquee></p><hr color="red" size="10">
 
-.flexDirection-column{
-  flex-direction: column;
-}
+      <div class="header">
 
-.flexDirection-row{
-  flex-direction: row;
-}
+        <div class="header_isi">
 
-.justifyContent-center{
-  justify-content: center;
-}
+          <div class="gambar">
 
-.justifyContent-flexStart{
-  justify-content: flex-start;
-}
+            <form action="login.php" method="POST">
 
-.alignItems-flexStart{
-  align-items: flex-start;
-}
+              <input type="text" name="username" placeholder="Username" class="login_regis">     <br />
+              <input type="password" name="password" placeholder="Password" class="login_regis"> <br />
 
-.alignItems-center{
-  align-items: center;
-}
+            <div class="chexbox">
+              <input type="checkbox" name="chek" > Remember me <br />
+            </div>
 
-.flexShrink-0{
-  flex-shrink: 0;
-}
+              <input type="Submit" name="login" value="LOGIN" class="tombol_login">
+            </form>
+
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        CopyRight&copy 2016 | Design By: FatikZ
+      </div>
+    </div>
+  </body>
+</html>
