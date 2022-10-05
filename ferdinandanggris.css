@@ -71,3 +71,48 @@
 .text-warning {
     background-color: #FFC007;
 }
+
+/* flex */
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.d-flex-row {
+    flex-direction: row;
+}
+
+.d-flex-col {
+    flex-direction: column;
+}
