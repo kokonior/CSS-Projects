@@ -1,0 +1,7 @@
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  // text to align centre
+  padding: 10px;
+}
