@@ -1,31 +1,27 @@
-.display-flex{
-  display: flex;
+<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.flexDirection-column{
-  flex-direction: column;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
 }
 
-.flexDirection-row{
-  flex-direction: row;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
+</style>
 
-.justifyContent-center{
-  justify-content: center;
-}
-
-.justifyContent-flexStart{
-  justify-content: flex-start;
-}
-
-.alignItems-flexStart{
-  align-items: flex-start;
-}
-
-.alignItems-center{
-  align-items: center;
-}
-
-.flexShrink-0{
-  flex-shrink: 0;
-}
+<div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+    <p>Hello World!</p>
+  </div>
+</div>
