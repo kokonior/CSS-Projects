@@ -34,3 +34,40 @@
 .bg-warning {
     background-color: #FFC007;
 }
+
+/*Text Color */
+.text-primary {
+    background-color: #185B8F;
+}
+
+.text-info {
+    background-color: #50A5F1;
+}
+
+.text-secondary {
+    background-color: #6D6D7C;
+}
+
+.text-white {
+    background-color: #fff;
+}
+
+.text-light {
+    background-color: #E4E4E4;
+}
+
+.text-success {
+    background-color: #34C28F;
+}
+
+.text-danger {
+    background-color: #DC3444;
+}
+
+.text-dark {
+    background-color: #495057;
+}
+
+.text-warning {
+    background-color: #FFC007;
+}
