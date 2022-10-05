@@ -1,0 +1,36 @@
+/*Background Color */
+.bg-primary {
+    background-color: #185B8F;
+}
+
+.bg-info {
+    background-color: #50A5F1;
+}
+
+.bg-secondary {
+    background-color: #6D6D7C;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-light {
+    background-color: #E4E4E4;
+}
+
+.bg-success {
+    background-color: #34C28F;
+}
+
+.bg-danger {
+    background-color: #DC3444;
+}
+
+.bg-dark {
+    background-color: #495057;
+}
+
+.bg-warning {
+    background-color: #FFC007;
+}
