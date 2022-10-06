@@ -35,6 +35,11 @@
     background-color: #FFC007;
 }
 
+.btn-primary {
+    background-color: #185B8F;
+}
+
+
 /*Text Color */
 .text-primary {
     background-color: #185B8F;
@@ -115,4 +120,83 @@
 
 .d-flex-col {
     flex-direction: column;
+}
+
+/* text */
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.vertical-center {
+    vertical-align: middle;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+/* button */
+
+.btn {
+    width: 10em;
+    height: 3em;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+
+.btn-info {
+    background-color: #50A5F1;
+}
+
+.btn-secondary {
+    background-color: #6D6D7C;
+}
+
+.btn-white {
+    background-color: #fff;
+}
+
+.btn-light {
+    background-color: #E4E4E4;
+}
+
+.btn-success {
+    background-color: #34C28F;
+}
+
+.btn-danger {
+    background-color: #DC3444;
+}
+
+.btn-dark {
+    background-color: #495057;
+}
+
+.btn-warning {
+    background-color: #FFC007;
 }
