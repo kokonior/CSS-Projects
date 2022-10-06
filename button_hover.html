@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>button</title></head>
+    <style>
+        body{
+            background: radial-gradient(skyblue,rgb(232, 232, 169),rgb(175, 230, 66),skyblue);
+        }
+        #box{
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #but{
+            height: 120px;
+            width: 400px;
+            font-size: 80px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            border-radius: 30px;
+        }
+        #but{
+            background-color: hotpink;
+            background-image: linear-gradient(45deg, transparent, transparent 40%,#ffffff44 40%, #ffffff44 60% , transparent 60%, transparent 100%);
+            background-size: 200% 100%;
+            background-repeat: round;
+            background-position-x: 150%;
+        }
+        #but:hover{
+            background-position-x: -150%;
+           
+            border-radius: 50px;
+            background-color: rgba(13, 20, 14, 0.829);
+            background-image: linear-gradient(45deg,transparent, transparent 40%,#2d3fa3a7 40%,#64ba3da7 60% , transparent 60%, transparent 100%);
+            transition: background-position-x 2s, width 2s, height 2s, border-radius 2s;
+            box-shadow: 5px 5px 15px 15px rgba(255, 105, 180, 0.226);
+            cursor: pointer;
+
+        }
+        #but{
+            max-width: 800px;
+            -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+        }
+
+    </style>
+    <body>
+        <div id="box">
+            <input type="button" id="but" value="Button">
+        </div>
+    </body>
+</html>
