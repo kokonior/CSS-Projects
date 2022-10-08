@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  text-align: center;
+}
+body {
+  font-family: "Silkscreen", cursive;
+  background-color: black;
+  color: white;
+}
+.guess {
+  font-size: 70px;
+  display: flex;
+  align-self: center;
+  gap: 20px;
+}
+
+button {
+  font-family: "Silkscreen", cursive;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 16px 16px;
+}
+
+.range {
+  font-size: 28px;
+}
+
+.header {
+  position: relative;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  font-family: "Silkscreen", cursive;
+  font-size: 24px;
+  color: white;
+  background-color: black;
+  width: 200px;
+  padding: 16px 16px;
+  border: 2px solid white;
+  margin: 0px 0px 30px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.right p {
+  text-align: left;
+  line-height: 2;
+  font-size: 32px;
+}
+
+.main-screen {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+
+.checks {
+  text-align: left;
+}
+
+.number {
+  margin: auto;
+  /* change 2  */
+  font-size: 50px;
+  position: absolute;
+  top: 80px;
+  left: 45%;
+  /* change - 1 */
+  border: 2px solid white;
+  padding: 16px;
+}
+
+.made {
+  margin-top: 30px;
+  /* change3  */
+  font-size: 24px;
+}
