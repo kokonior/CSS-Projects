@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Indie+Flower&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body
+{
+    background-image: url('https://thumbs.dreamstime.com/b/todo-list-seamless-pattern-universal-background-66678083.jpg');
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: none;
+}
+
+h1
+{
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: purple;
+}
+.container
+{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: 10px 10px rgb(83,211,185);
+    /* height:400px; */
+    width:400px; 
+    margin:auto;
+    /* display:flex; */
+    flex-direction: column;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding:20px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing:1px;
+}
+
+.input
+{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Arvo', serif;
+}
+#textentry
+{
+    height: 30px;
+    width: 300px;
+    padding: 7px;
+    font-size: 15px;
+    /* border-radius: 15px; */
+    border:none;
+    text-decoration: none;
+    /* outline-color: rgba(83,211,185,70%); */
+    outline:0;
+}
+#textentry:focus
+{
+    border-bottom: 1px solid rgba(83,211,185,70%);
+}
+
+#add
+{
+    width:60px;
+    border-radius: 17px;
+    cursor:pointer;
+    box-shadow: 3px 3px rgb(83,211,185);
+    text-decoration: none;
+    padding: 0px;
+    font-size: 30px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+#add:active
+{
+    transform: scale(0.8);
+}
+
+.tasks
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items:flex-start;
+}
+
+.displaytask
+{
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* box-shadow: -3px -3px rgb(93, 203, 233); */
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+    
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 18px;
+    display:flex;
+    flex-direction: row;
+    width:390px;
+    justify-content: space-between;
+    text-align: center;
+    /* font-style: italic; */
+    line-height:30px;
+}
+
+#taskbutton
+{
+    width:30px;
+    height:30px;
+    border-radius: 10px;
+    border:none;
+    background-color: red;
+    color: white;
+}
+#taskbutton:active
+{
+    transform: scale(0.7);
+}

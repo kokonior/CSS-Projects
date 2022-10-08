@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#dinoimage
+{
+    height:100px;
+    width:100px;
+    top:150px;
+    left:150px;
+    position: relative;
+}
+
+.jump
+{
+    animation:jump 0.4s linear;
+}
+
+@keyframes jump
+{
+    25%{top: 100px;}
+    50%{top: 80px;}
+    75%{top: 100px;}
+}
+
+.ground
+{
+    top: 100px;
+    width:100%;
+    height:250px;
+}
+
+#treeimage
+{
+    height:50px;
+    width:30px;
+    position: relative;
+    left: 2000px;
+    top:150px;
+    animation: move 2s infinite linear;
+}
+@keyframes move
+{
+    100%{left:-90px;}
+}
+
+.realground
+{
+    width:100%;
+    height:0;
+    border:1px solid gray;
+}
