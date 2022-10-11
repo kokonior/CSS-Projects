@@ -1,0 +1,104 @@
+@media (max-width: 800px) {
+  button {
+    font-family: "Silkscreen", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .check {
+    margin-top: -10px;
+    margin-left: 30px;
+  }
+
+  .main-screen {
+    margin-top: 50px;
+    padding: 5px;
+  }
+
+  .range {
+    font-size: 16px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .guess {
+    font-size: 30px;
+    margin-top: 80px;
+  }
+
+  .number {
+    margin: 30px auto 0px auto;
+    font-size: 30px;
+    padding: 16px;
+  }
+
+  .input {
+    font-size: 16px;
+    width: 130px;
+    padding: 12px 12px;
+    margin: 0px 0px 30px 30px;
+  }
+
+  .right p {
+    text-align: left;
+    line-height: 2;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .right {
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 400px) {
+  button {
+    font-family: "Silkscreen", cursive;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .check {
+    margin-top: -10px;
+    margin-left: 30px;
+  }
+
+  .main-screen {
+    padding: 5px;
+  }
+
+  .range {
+    font-size: 12px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .guess {
+    font-size: 30px;
+    margin-top: 60px;
+  }
+
+  .number {
+    margin: 30px auto 0px auto;
+    font-size: 30px;
+    padding: 16px;
+  }
+
+  .input {
+    font-size: 16px;
+    width: 130px;
+    padding: 12px 12px;
+    margin: 0px 0px 30px 30px;
+  }
+
+  .right p {
+    text-align: left;
+    line-height: 2;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .right {
+    margin-top: -30px;
+  }
+}
