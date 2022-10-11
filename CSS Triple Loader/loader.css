@@ -1,0 +1,20 @@
+#loading-page {
+    width: 100vw;
+    height: 100vh;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #loading-page svg {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: inline-block;
+  }
+  
+  body {
+    overflow: hidden;
+  }
+  
