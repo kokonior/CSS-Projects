@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap");
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 35px;
+    background: rgb(243, 243, 243);
+    color: #131313;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    margin: 15px 0;
+    font-weight: 900;
+    font-size: 28px;
+    text-align: center;
+}
+
+input {
+    transition: 0.5s ease-in-out;
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.11);
+    border: none;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    margin: 35px 0;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+}
+
+label {
+    font-size: 12px;
+}
+
+form {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    max-width: 370px;
+    margin: 5px auto;
+}
+
+form button {
+    background: rgb(25, 67, 255);
+    width: 100%;
+    margin: 5px 0;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-image: linear-gradient(rgb(0, 153, 255), blue);
+}
+
+.start {
+    background: rgb(48, 33, 253);
+    color: white;
+    cursor: pointer;
+}
+
+.start:hover {
+    background-image: linear-gradient(rgb(0, 183, 255), blue);
+}
+
+.break {
+    background: rgb(0, 199, 116);
+    color: #000000;
+    cursor: pointer;
+}
+
+.break:hover {
+    background-image: linear-gradient(green, solid green);
+}
+
+.reset {
+    background: rgb(250, 69, 109);
+    color: #000000;
+    cursor: pointer;
+}
+
+.reset:hover {
+    background-image: linear-gradient(red, pink);
+}
+
+.pause {
+    background: rgb(253, 143, 17);
+    cursor: pointer;
+}
+
+.pause:hover {
+    background-image: linear-gradient(red, yellow);
+}
+
+.resume {
+    background: rgb(131, 10, 252);
+    color: white;
+    cursor: pointer;
+}
+
+.resume:hover {
+    background-image: linear-gradient(blue, purple);
+}
+
+.clock {
+    padding: 3px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 30%;
+    font-size: 24px;
+}
+
+.progress-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress-ring__circle {
+    transition: 0.5s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke: rgb(51, 65, 255);
+    box-shadow: rgb(250, 69, 109);
+}
+
+footer {
+    position: fixed;
+    bottom: 4px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.danger {
+    stroke: rgb(243, 17, 28);
+    animation: pulse 0.9s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        transform: rotate(-90deg) scale(1);
+    }
+    50% {
+        transform: rotate(-90deg) scale(1.05);
+    }
+    75% {
+        transform: rotate(-90deg) scale(0.8);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-areas: "head head" "clock form" "btns ji";
+    }
+    .btn-group {
+        grid-area: btns;
+        justify-content: center;
+    }
+    .clock {
+        grid-area: clock;
+        height: 100%;
+    }
+    h1 {
+        grid-area: head;
+        align-self: center;
+    }
+    form {
+        align-self: center;
+        justify-self: center;
+        grid-area: form;
+        width: 50%;
+        justify-content: space-around;
+    }
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    form {
+        height: 40%;
+    }
+    footer {
+        position: static;
+    }
+}
