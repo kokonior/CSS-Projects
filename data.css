@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+body,
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font: 400 15px/1.8 "Quicksand", sans-serif;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg {
+    position: relative;
+    opacity: 0.79;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg {
+    background-image: url("images/bg.jpg");
+    height: 100%;
+}
+
+.caption,
+.typewrite {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.caption .typewrite {
+    color: #fff;
+    padding: 18px;
+    font-size: 90px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00a2c6;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+nav {
+    padding: 5px;
+    position: sticky;
+    top: 0%;
+    text-align: right;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin: 2%;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card .text {
+    padding: 0 20px 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#hobi,
+#tentang,
+#biodata,
+#profile {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card>img,
+.foto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-top: 5%;
+}
+
+#container-dua {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside,
+    .card {
+        width: 100%;
+        padding: 0;
+    }
+}
