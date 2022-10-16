@@ -1,0 +1,39 @@
+*{
+            box-sizing: border-box;
+        }
+
+        header{
+            border: 2px solid red;
+            margin: auto;
+            width: 1000px;
+            background-color: lightblue;
+        }
+
+        img{
+            margin: auto;
+            display: block;
+            width: 75px; 
+        }
+
+        h3{
+            margin: 0px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+        }
+
+        .box{
+            border: 2px solid green;
+            margin: auto;
+            padding: 20px;
+            display: inline-block;
+            width: 33%;
+            background-color: beige;
+            
+        }
+
+        .container{
+            border: 2px solid red;
+            margin: auto;
+            width:1200px;
+        }
