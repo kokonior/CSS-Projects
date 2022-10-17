@@ -1,0 +1,30 @@
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+nav {
+    background-color:greenyellow;
+    padding: 5px;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main {
+    padding: 20px;
+}
