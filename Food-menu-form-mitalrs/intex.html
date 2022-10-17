@@ -25,23 +25,39 @@
                     <br>
 
                     <label for="food">Choose your food:
-                        <select name="food" id="food">
-                            <option value="pizza">pizza</option>
-                            <option value="momos">momos</option>
+                        <select name="food" id="food" class="selection">
+                            <option value="pizza" class="option">pizza</option>
+                            <option value="momos" class="option">momos</option>
                             <option value="noodels">noodels</option>
                             <option value="rise">rise</option>
                             <option value="roll">roll</option>
                         </select>
                     </label>
                     <br>
+                    <div>extra veggies
+                    <br>
+                    <input type="checkbox" id="extra" name="vegi" value="vegi">
+                    <label for="extra"> capcicam</label>
+                    <br>
+                    <input type="checkbox" id="extra" name="vegi" value="vegi">
+                    <label for="extra"> tomato</label>
+                    <br>
+                    <input type="checkbox" id="extra" name="vegi" value="vegi">
+                    <label for="extra"> cabbage</label>
+                    <br>
+                    <input type="checkbox" id="extra" name="vegi" value="vegi">
+                    <label for="extra"> mushrooms</label>
+                    <br>
+                    <input type="checkbox" id="extra" name="vegi" value="vegi">
+                    <label for="extra"> extra cheese</label>
+                    <br>
+                </div>
+
+                    <textarea class="text-desc" name="msg" id="" cols="30" rows="10">give your feedback</textarea>
+                    <br>
                     <br>
 
-                    <textarea  class="text-desc"
-                    name="msg" id="" cols="30" rows="10">give your feedback</textarea>
-                    <br>
-                    <br>
-
-                    <button type="submit" onclick="alert('your response submited')">Submit</button>
+                    <button class="submit" type="submit" onclick="alert('your response submited')">Submit</button>
                 </fieldset>
             </div>
         </form>

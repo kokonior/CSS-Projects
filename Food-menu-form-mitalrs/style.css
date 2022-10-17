@@ -10,6 +10,11 @@
     width: 100vw;
     background-image: url(img/background-food-img.webp);
     background-size: cover;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
  
 .form-div{
@@ -24,6 +29,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+
 }
 
 .fieldset{
@@ -38,9 +47,18 @@
     font-size: 18px;
 }
 
+.selection{
+    background-color: transparent;
+    margin: 10px;
+}
+.option{
+    color: white;
+}
 .text-desc{
     border: none;
     background-color: transparent;
+    padding: 11px;
+    margin: 10px;
 }
 
 .text-desc:hover{
@@ -48,4 +66,14 @@
     border-radius: 5px;
     padding: 10px;
     
+}
+.submit{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+.submit:hover{
+    border: 2px solid white;
+    border-radius: 5px;
 }
