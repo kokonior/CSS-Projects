@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.main-container {
+    height: max-content;
+    background-color: black;
+    padding: 0 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .main-container {
+    height: fit-content;
+
+} */
+
+#brand {
+    width: max-content;
+    height: max-content;
+    display: flex;
+}
+
+#brand-name {
+    text-decoration: none;
+    margin: auto;
+    padding: 5px;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: white;
+}
+
+#brand-logo {
+    margin: 5px;
+    padding: auto;
+    width: 100px;
+    height: fit-content;
+}
+
+.nav-items{
+    display: flex;
+    width: max-content;
+}
+.nav-link{
+    margin:  auto 7px;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: white;
+    z-index: 20;
+}
+.nav-items button{
+    outline: none;
+    border: solid 1px white !important;
+    border-radius: 5px;   
+    background-color: black;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    z-index: 99;
+    cursor: pointer;
+}
+#login-link{
+    margin:  auto 0 !important;
+    /* border-radius: 5px;    */
+}
+.nav-items button::before{
+    content: '';
+    border: solid 1px white;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    padding: 0 0 5px 0;
+    top: -2px;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 90%;
+    transform: scale(0.2);
+    transition: transform 0.2s linear;
+    z-index: -1;
+}
+.nav-items button:hover::before{
+    transform: scale(1);
+    opacity: 1;
+}
+#login-link{
+    z-index: 1111;
+}
+#login-link:hover{
+    color: black !important;
+    
+}
+/* .nav-items button:hover{
+    background-color: white;
+
+} */
+.hamburger-btn{
+
+    display: none;
+}
+.hamburger{
+    display: none  ;
+}
+.fas{
+    color: white;
+    font-size: 2rem;
+}
+@media all and (max-width:722px){
+    .hamburger-btn{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-items{
+        display: none;
+    }
+    .hamburger{
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        justify-content: center;
+        align-items: center;
+        transition: display 2s ;
+    }
+    .nav-link{
+        text-align: center;
+        padding: 8px;
+    }
+    .toggle-nav{
+        display: flex;
+        
+    }
+    .hamburger button{
+            outline: none;
+            border: solid 1px white !important;
+            border-radius: 5px;   
+            background-color: black;
+            padding: 5px;
+            margin: 5px;
+    }
+    .hamburger button:hover{
+        background-color: white;
+    }
+    
+
+}

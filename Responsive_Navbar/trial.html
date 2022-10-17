@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trial.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="main-container">
+            <div id="brand">
+                <!-- <img src="logo.png" alt="" id="brand-logo"> -->
+                <a id="brand-name" href="#">Brand</a>
+            </div>
+            <div class="nav-items" id="">
+
+                <a class="nav-link" id="home" href="#">Home</a>
+                <a class="nav-link" id="about" href="#">About</a>
+                <button class="login">
+                    <a class="nav-link" id="login-link" href="#">Login</a>
+                </button>
+            </div>
+            <label for="check" class="hamburger-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+        </div>
+        <div class="hamburger">
+            <a class="nav-link" id="home" href="#">Home</a>
+            <a class="nav-link" id="about" href="#">About</a>
+            <button class="login">
+                <a class="nav-link" id="login-link" href="#">Login</a>
+            </button>
+        </div>
+    </nav>
+    <script>
+        const hamburgerbtn = document.getElementsByClassName("hamburger-btn")[0];
+        const navlinks = document.getElementsByClassName("hamburger")[0];
+        hamburgerbtn.addEventListener("click", () => {
+            navlinks.classList.toggle("toggle-nav");
+        });
+        window.onclick = function (event) {
+            if (!event.target.matches('.fas') && !event.target.matches('.hamburger') && !event.target.matches('.nav-link')) {
+                var closemenu = document.getElementsByClassName('hamburger');
+                for (var i = 0; i < closemenu.length; i++) {
+                    var x = closemenu[i];
+                    if (x.classList.contains("toggle-nav")) {
+                        x.classList.remove("toggle-nav");
+                    };
+                };
+                // alert("hi")
+            };
+        };
+    </script>
+    <script src="https://kit.fontawesome.com/5fa69e101b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

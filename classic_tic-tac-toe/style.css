@@ -1,21 +1,19 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(232, 228, 222);
 }
 
-h1{
-    color: orangered;
-    font-size: 45px;
-}
 
 #b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8,#b9{
-    width: 80px;
-    height: 52px;
+    width: 85px;
+    height: 65px;
     margin: auto;
-    border: 1px solid gray;
-    border-radius: 6px;
+    border: 5px solid rgb(13, 4, 90);
+    border-radius: 2px;
     font-size: 30px;
     text-align: center;
     cursor: pointer;
+    margin-right: 0.5px;
 }
 
 #but{
@@ -24,15 +22,28 @@ h1{
     border: 1px solid dodgerblue;
     margin: auto;
     border-radius: 4px;
-    background-color: dodgerblue;
+    background-color: rgb(5, 43, 81);
     color: white;
     font-size: 20px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 #print{
-    color: dodgerblue;
-    font-size: 20px;
+    color: rgb(152, 99, 46);
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+font-size: 30px;
+letter-spacing: 0.4px;
+word-spacing: 2px;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+padding-bottom: 10px;
+
+
 }
 
 #main{
@@ -40,6 +51,33 @@ h1{
 }
 
 #ins{
-    color: dodgerblue;
+    color: rgb(152, 99, 46);
     font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+font-size: 26px;
+letter-spacing: 0.4px;
+word-spacing: 2px;
+font-weight: 400;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+padding-bottom: 10px;
+}
+.new{
+    padding-top: 20px;
+    font-size: 20px;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+font-size: 66px;
+letter-spacing: 0.4px;
+word-spacing: 2px;
+color: #14065d;
+font-weight: 700;
+text-decoration: underline solid peru;
+font-style: normal;
+font-variant: normal;
+text-transform: uppercase;
+margin-top: 40px;
 }
