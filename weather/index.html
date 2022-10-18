@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <section class="top-section">
+          <h1 class="heading">🌞Weather.io</h1>
+          <form class="search">
+            <input type="text" placeholder="City Name" size="30" autofocus />
+            <button type="submit">GO</button>
+          </form>
+        </section>
+      </nav>
+      <main>
+        <div class="card">
+          <img src="bg.jpg" class="background" />
+          <h2 class="city"></h2>
+          <div class="info">
+            <span>
+              <h2 class="temp">12°</h2>
+            </span>
+            <span>
+              <p class="humidity">Humidity: 87%</p>
+            </span>
+            <span>
+              <p class="max">MAX 21°/9°</p>
+              <p class="min">MIN 23°/10°</p>
+            </span>
+          </div>
+        </div>
+      </main>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
