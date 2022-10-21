@@ -1,0 +1,157 @@
+.container {
+  position: relative;
+  width: 380px;
+  height: 380px;
+  margin: auto;
+  margin-top: 20vh;
+  background: #000080;
+  border-radius: 120px;
+}
+
+.tree {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 13%;
+  top: 5%;
+}
+
+
+.tree-tri3 {
+  position: absolute;
+  width: 66%;
+  height: 36%;
+  bottom: 20%;
+  left: 3.5%;
+  background: #009900;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.tree-tri2 {
+  position: absolute;
+  width: 53%;
+  height: 33%;
+  bottom: 35%;
+  left: 10%;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background: #00cc44;
+  z-index: 2;
+}
+
+.tree-tri1 {
+  position: absolute;
+  width: 42%;
+  height: 25%;
+  bottom: 50%;
+  left: 15.5%;
+  background: #33ff77;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  z-index: 3;
+}
+
+.trunk {
+  position: absolute;
+  width: 10%;
+  height: 16%;
+  background: #734d26;
+  z-index: 1;
+  bottom: 0;
+  left: 44%;
+}
+
+.orn {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  box-shadow: 0 0 3px #d44669;
+  background: #e62e00;
+  z-index: 4;
+}
+
+.shine {
+  position: absolute;
+  width: 55%;
+  height: 55%;
+  top: 10%;
+  right: 11%;
+  border-radius: 50%;
+  background: #ffad99;
+}
+
+.or1 {
+  left: 26%;
+  top: 36%;
+}
+
+.or2 {
+  left: 40%;
+  top: 45%;
+}
+
+.or3 {
+  left: 19%;
+  top: 52%;
+}
+
+.or4 {
+  left: 35%;
+  top: 61%;
+}
+
+.or5 {
+  left: 51%;
+  top: 69%;
+}
+
+.or6 {
+  left: 15%;
+  top: 68%;
+}
+
+.star {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background: #ffd9e2;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  left: 39.5%;
+  top: 16%;
+  z-index: 4;
+}
+
+.star-highlight {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background: #e6b800;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 50% 70%, 50% 60%, 50% 46%, 50% 36%);
+  left: 39.5%;
+  top: 16%;
+  z-index: 4;
+}
+
+.star-light {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background: #ffdb4d;
+  filter: opacity(.7);
+  border-radius: 50%;
+  left: 39.5%;
+  top: 16%;
+  z-index: 3;
+  animation: star 3s ease-in-out infinite;
+}
+
+@keyframes star {
+  100% {
+    transform: scale(.5);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  0% {
+      transform: scale(.5);
+  }
+}
