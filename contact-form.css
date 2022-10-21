@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #3e2093;
+  color: #fff;
+}
+
+.input-seaction {
+  background-color: #fff;
+  color: #0000;
+  margin: auto;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 15px;
+  height: 400px;
+  margin-top: 50px;
+}
+.name,
+.email,
+.phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.tittle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input {
+  border-radius: 7px;
+  padding: 5px;
+  font-size: 16px;
+  width: 100;
+  border: 1px solid #e4e4e7;
+  box-shadow: none;
+}
+input:focus,
+input:active,
+input:hover {
+  border-color: #f75a67;
+  outline: #f75a67;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+textarea {
+  resize: none;
+  border: 1px solid #e4e4e7;
+  border-radius: 7px;
+  padding: 10px;
+  height: 100%;
+}
+
+textarea:focus,
+textarea:hover {
+  outline: #f75a67;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 100%;
+}
+form {
+  display: flex;
+}
+
+label {
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.services {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+select {
+  width: 200px;
+  padding: 5px;
+  border-radius: 7px;
+  border-color: #e4e4e7;
+  font-weight: 500;
+}
+
+select:focus,
+select:hover {
+  outline: #f75a67;
+}
+
+.btn-submit {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 80px;
+  background-color: #f75a67;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+button:hover,
+button:active,
+button:focus {
+  background-color: #cf3f4b;
+}
+
+@media only screen and (max-width: 480px) {
+  .input-seaction {
+    width: 300px;
+    height: 500px;
+    margin-bottom: 50px;
+  }
+
+  form {
+    flex-wrap: wrap;
+  }
+  input {
+    width: 265px;
+  }
+  .message {
+    margin: 0;
+  }
+
+  select {
+    width: 265px;
+  }
+}
