@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #011F3F;
+}
+.container{
+    margin: 50px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+   /* margin: 100px 120px 12px; */
+}
+
+#texta{
+    font-family: "silkscreen",cursive;;
+    color: white;
+    font-size: 34px;
+    margin: 50px 500px 0px;
+
+}
+.green{
+     
+    margin: 24px 0px;
+    padding: 100px;
+    background-color: green;
+    border: 9px solid black;
+    border-radius: 20px;
+    /* display: none; */
+}
+.red{
+    margin: 24px 0px;
+    padding: 100px;
+    background-color: red;
+    border: 9px solid black;
+    border-radius: 20px;
+}
+.yellow{
+    margin: 24px 0px;
+    padding: 100px;
+    background-color: yellow;
+    border: 9px solid black;
+    border-radius: 20px;
+}
+.blue{
+    margin: 24px 0px;
+    padding: 100px;
+    background-color: blue;
+    border: 9px solid black;
+    border-radius: 20px;
+}
