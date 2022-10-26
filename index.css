@@ -1,0 +1,66 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+body{
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+}
+.container{
+    
+    position:absolute;
+    top:25%;
+    left:60%;
+}
+.container h1{
+    font-size: 30px;
+    border-bottom: 5px solid rgb(138, 101, 14);
+    margin-bottom:33px ;
+    padding: 5px 0px;
+}
+
+.box{
+    border-bottom: 2px solid rgb(139, 108, 78);
+    width: 100%;
+    margin: 15px 0px;
+}
+.box i{
+    width:29px;
+        text-align:center;
+    
+
+}
+
+.box input{
+    background: none;
+    width:75%;
+    border: none;
+    outline:none;
+    color:palegoldenrod;
+    margin:12px 0px ;
+    font-size: 20px;
+    padding: 5px 10px;
+
+}
+
+.btn{
+    cursor:pointer;
+    outline:none;
+    width:25%;
+    font-size:20px ;
+    margin:12px 0 ;
+    padding:14px 10px;
+    border-radius:15px ;
+    border: 2px solid rgb(129, 88, 49);
+    font-size: 18px;
+    background: none;
+    font-weight: bold;
+}
+.btn:hover{
+    color: rgb(27, 15, 3);
+    background: rgb(224, 195, 136);
+}
+
+
+
