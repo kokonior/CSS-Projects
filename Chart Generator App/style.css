@@ -1,0 +1,22 @@
+div {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #ffe0e6;
+  border: 2px solid #fbabbb;
+  border-radius: 5px;
+  padding: 7px 16px;
+  margin:0 2px 0 0;
+  color: #7b7a7a;
+  cursor: pointer;
+}
+
+input{
+  background-color: #ffe0e6;
+  border: 2px solid #fbabbb;
+  border-radius: 5px;
+  padding: 5px;
+  margin:0 2px 0 0;
+}
