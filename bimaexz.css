@@ -1,0 +1,206 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font :16px arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+}
+.container {
+    width: 800px;
+    margin: 100px auto;
+    background-color: #ffff;
+    padding-left: 0;
+    position: relative;
+}
+.garis{
+    height: 45px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: lightskyblue;
+    position: fixed;
+    z-index: 9999;
+}
+.ribbon{
+    width: 200px;
+    height: 200px;
+    background-image: url(img/ribbon.png);
+    display: inline-block;
+    position: absolute;
+    top: -14.8px;
+    right: -15px;
+}
+.header {
+    padding: 20px;
+}
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 17px;
+}
+.header li{
+    display: inline;
+    padding-left: 15px;
+}
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 0px;
+    font-weight: 700;
+}
+.header a {
+    text-decoration: none;
+    color: lightskyblue;
+    text-transform: uppercase;
+}
+.header a:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+.banner {
+    background-image: url(img/banner.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: 0 -2000px;
+    border-top: 5px solid lightskyblue;
+    border-bottom: 5px solid lightskyblue;
+}
+.content1{
+    padding: 15px;
+    width: 400px;
+    box-sizing: border-box;
+    float:left;
+}
+.content1 h2{
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+.content1 h3{
+    color: #000000;
+    padding-left: 15px;
+    padding-bottom: 35px; 
+    font-size: 13px;   
+}
+.content1 h3 a{
+    color: rgb(41, 45, 43);
+    text-decoration: none;
+}
+.content1 .penulis a:hover{
+    color: rgb(0, 0, 0);
+    background-color: lightskyblue;
+    padding: 5px;
+}
+.content2{
+    color: #000000;
+    float: right;
+    width: 300px;
+}
+.content2 h3{
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.content2 img{
+    height: 140px;
+    padding-right: 10px;
+    padding-top: 5px;
+    float: left;
+}
+.content2 p{
+    text-align: justify;
+    font-size: 17px;
+}
+.content {
+    padding: 20px;
+}
+.content h2 {
+ font-size: 28px;
+ font-weight: bold;
+}
+.content.penulis{
+    font-size: 11px;
+    margin-top: -5px;
+}
+.content .penulis a{
+    color: lightskyblue;
+    text-decoration: none;
+}
+.content p{
+    margin-bottom: 20px;
+    font-size: 13px;
+    
+}
+.content1 {
+    text-align: justify;
+}
+.footer{
+    width: 100%;
+    height: 20px;
+    background-color: lightskyblue;
+    color: #000000;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
