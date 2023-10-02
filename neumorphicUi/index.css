@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  cursor: default;
+}
+body {
+  height: 80vh;
+  width: 80vw;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.header-box {
+  height: 24vh;
+  width: 27vw;
+  background-color: aliceblue;
+  margin-top: 10%;
+  margin-left: 40%;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cards {
+  display: flex;
+  gap: 10px;
+}
+.card:hover {
+  transform: scale(1.3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card {
+  height: 13vh;
+  width: 8vw;
+  background-color: aliceblue;
+  margin-top: 8%;
+  margin-left: 5%;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+.notification {
+  height: 10vh;
+  width: 27vw;
+  background-color: white;
+  margin-top: 3%;
+  margin-left: 40%;
+  border-radius: 10px;
+  display: flex;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45),
+    inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+  background-color: rgb(230, 233, 243);
+}
+.notification h4 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.notification h4 span {
+  color: blue;
+}
+.buttons {
+  display: flex;
+  margin-left: 40%;
+  gap: 50px;
+}
+.btn {
+  height: 6vh;
+  width: 12vw;
+  background-color: aliceblue;
+  margin-top: 5%;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.4s;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  background-color: white;
+  color: rgb(109, 109, 231);
+}
+.btn:hover {
+  transform: scale(1.2);
+  color: white;
+  background-color: rgb(109, 109, 231);
+}
+.icon {
+  font-size: 20px;
+  display: flex;
+  margin-left: 20%;
+  margin-top: 10%;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 10%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.credit {
+  height: 8vh;
+  width: 8vh;
+  border-radius: 50%;
+  background-color: rgb(253, 113, 112);
+  display: flex;
+}
+.order {
+  height: 8vh;
+  width: 8vh;
+  border-radius: 50%;
+  background-color: rgb(127, 122, 254);
+  display: flex;
+}
+.gift {
+  height: 8vh;
+  width: 8vh;
+  border-radius: 50%;
+  background-color: rgb(252, 171, 112);
+  display: flex;
+}
