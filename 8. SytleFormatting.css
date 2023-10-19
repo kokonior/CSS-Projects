@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+
+
+body {
+    /* Menetapkan jenis font yang akan diterapkan pada target. */
+    font-family: sans-serif;
+    font-size: 16px;
+
+    /* font-weight yang digunakan untuk mengatur ketebalan dari font yang ditampilkan. */
+    font-weight: 100;
+}
+h1 {
+    /* Menentukan ukuran pada teks. */
+    font-size: 150%;
+
+    /* Italic dan oblique keduanya menampilkan teks yang miring */
+    font-style: oblique;
+
+    font-variant: small-caps;
+
+    /* untuk membuat bayangan pada teks (atau biasa disebut drop shadow)  */
+    text-shadow: 2px 2px 1px #000;
+}
+p {
+    
+    font: 1em sans-serif;
+    /* Properti line-height digunakan untuk mengatur jarak minimal dari garis dasar ke garis dasar dalam menampilkannya teks pada halaman.  */
+    line-height: 2;
+
+    /* Dalam membuat sebuah dokumen tidak jarang kita membutuhkan jarak/lekuk di awal paragraf. */
+    text-indent: 25%;
+
+    text-decoration: underline;
+    
+}
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+nav a:hover {
+    font-weight: bold;
+}
+
+footer {
+    padding: 20px;
+    color: rgb(78, 231, 23);
+    background-color: lightseagreen;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0.5;
+}
